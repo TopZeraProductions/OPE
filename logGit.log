@@ -1,0 +1,27 @@
+2018-09-24
+Dando o pull.. 
+From https://github.com/TopZeraProductions/OPE
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Status.. 
+No ramo master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   README.md
+	modified:   documentos/art01-escopo.docx
+	modified:   documentos/art03-Integrantes-do-Projeto.docx
+	modified:   documentos/art03-Regras-de-Comunicacao.docx
+	modified:   "documentos/art05-Refer\303\252ncias.docx"
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	documentos/.~lock.art01-escopo.docx#
+	logGit.log
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+Add to stage area.. 
