@@ -25,3 +25,17 @@ Arquivos não monitorados:
 
 nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
 Add to stage area.. 
+commiting.. 
+[master e272893] Up
+ 7 files changed, 28 insertions(+)
+ mode change 100644 => 100755 README.md
+ create mode 100755 documentos/.~lock.art01-escopo.docx#
+ mode change 100644 => 100755 documentos/art01-escopo.docx
+ mode change 100644 => 100755 documentos/art03-Integrantes-do-Projeto.docx
+ mode change 100644 => 100755 documentos/art03-Regras-de-Comunicacao.docx
+ mode change 100644 => 100755 "documentos/art05-Refer\303\252ncias.docx"
+ create mode 100644 logGit.log
+pushing:.. 
+To https://github.com/TopZeraProductions/OPE.git
+   5456caf..e272893  master -> master
+done
