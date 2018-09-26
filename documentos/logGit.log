@@ -27,3 +27,23 @@ Arquivos não monitorados:
 
 nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
 Add to stage area.. 
+commiting.. 
+[master 0228922] Up
+ 14 files changed, 43 insertions(+), 1 deletion(-)
+ delete mode 100755 documentos/.~lock.art01-escopo.docx#
+ delete mode 100755 documentos/art01-escopo.docx
+ delete mode 100644 documentos/art02-Integrantes-do-Projeto.docx
+ delete mode 100755 documentos/art03-Regras-de-Comunicacao.docx
+ delete mode 100755 "documentos/art05-Refer\303\252ncias.docx"
+ delete mode 100644 documentos/art06-lista de necessidades.docx
+ create mode 100644 documentos/artefatos1-6/art01-escopo.odt
+ create mode 100644 documentos/artefatos1-6/art02-Integrantes-do-Projeto.odt
+ create mode 100644 documentos/artefatos1-6/art03-Regras-de-Comunicacao.odt
+ create mode 100644 documentos/artefatos1-6/art04-Glossario.odt
+ create mode 100644 "documentos/artefatos1-6/art05-Refer\303\252ncias.odt"
+ create mode 100644 documentos/artefatos1-6/art06-lista de necessidades.odt
+ create mode 100644 documentos/logGit.log
+pushing:.. 
+To https://github.com/TopZeraProductions/OPE.git
+   26f3d8a..0228922  master -> master
+done

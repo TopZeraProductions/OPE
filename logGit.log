@@ -39,3 +39,26 @@ pushing:..
 To https://github.com/TopZeraProductions/OPE.git
    5456caf..e272893  master -> master
 done
+2018-09-26
+Dando o pull.. 
+From https://github.com/TopZeraProductions/OPE
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Status.. 
+No ramo master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (utilize "git add <arquivo>..." para atualizar o que será submetido)
+  (utilize "git checkout -- <arquivo>..." para descartar mudanças no diretório de trabalho)
+
+	modified:   documentos/logGit.log
+	modified:   logGit.log
+
+Arquivos não monitorados:
+  (utilize "git add <arquivo>..." para incluir o que será submetido)
+
+	scriptSql/
+
+nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
+Add to stage area.. 
