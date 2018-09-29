@@ -62,3 +62,11 @@ Arquivos não monitorados:
 
 nenhuma modificação adicionada à submissão (utilize "git add" e/ou "git commit -a")
 Add to stage area.. 
+commiting.. 
+[master b656292] Up
+ 3 files changed, 270 insertions(+)
+ create mode 100644 scriptSql/ProjetoLMS-v0.1.sql
+pushing:.. 
+To https://github.com/TopZeraProductions/OPE.git
+   0228922..b656292  master -> master
+done
