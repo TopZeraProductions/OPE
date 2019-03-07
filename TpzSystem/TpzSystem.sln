@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpzSystem", "TpzSystem\TpzSystem.csproj", "{04A3CDC9-258E-4532-BBF7-78E6772E5CC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04A3CDC9-258E-4532-BBF7-78E6772E5CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A3CDC9-258E-4532-BBF7-78E6772E5CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A3CDC9-258E-4532-BBF7-78E6772E5CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A3CDC9-258E-4532-BBF7-78E6772E5CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
