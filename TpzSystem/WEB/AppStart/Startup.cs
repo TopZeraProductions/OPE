@@ -41,6 +41,7 @@ namespace WEB.AppStart {
             App.UseHttpsRedirection();
             App.UseStaticFiles();
             App.UseCookiePolicy();
+            App.UseFileServer();
 
             App.UseMvc(ConfigureRoute);
         }

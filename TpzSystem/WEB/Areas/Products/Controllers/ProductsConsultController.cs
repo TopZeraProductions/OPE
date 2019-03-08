@@ -2,8 +2,8 @@
 
 namespace WEB.Areas.Products.Controllers {
 
-    [Area("products")]
-    public class ProductsController : Controller {
+    [Area("Products")]
+    public class ProductsConsultController : Controller {
         
         public IActionResult Index() {
             return RedirectToAction("ListProducts");

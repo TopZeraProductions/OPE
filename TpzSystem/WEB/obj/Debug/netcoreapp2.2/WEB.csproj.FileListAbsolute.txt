@@ -28,6 +28,4 @@
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.dll
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.pdb
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.csproj.CopyComplete
-/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Products/Views/_ViewImports.g.cshtml.cs
-/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Products/Views/_ViewStart.g.cshtml.cs
-/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Products/Views/Products/ListProducts.g.cshtml.cs
+/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Products/Views/ProductsConsult/ListProducts.g.cshtml.cs
