@@ -16,7 +16,7 @@ namespace WEB{
         private static IWebHostBuilder CreateWebHostBuilder(string[] args) {
             return WebHost.CreateDefaultBuilder(args)
                    .UseKestrel()
-                   .UseWebRoot("Assets")
+                   .UseWebRoot(Directory.GetCurrentDirectory())
                    .UseContentRoot(Directory.GetCurrentDirectory())
                    .UseStartup<Startup>();
         }
