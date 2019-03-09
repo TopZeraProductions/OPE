@@ -9,15 +9,16 @@ namespace WEB.AppStart {
             routeBuilder.MapAreaRoute(
                 "default_area", 
                 "area",
-                "{area}/{controller}/{action}/{id?}"
+                "{area:exists}/{controller=Start}/{action=Home}/{id?}"
             );
             
             routeBuilder.MapRoute(
                 "default", 
-                "{controller=Home}/{action=Index}/{id?}"
+                "{controller=Start}/{action=Index}/{id?}"
             );
             
             ConfigureProductRoute(routeBuilder);
+            ConfigureStartRoute(routeBuilder);
         }
     }
 }

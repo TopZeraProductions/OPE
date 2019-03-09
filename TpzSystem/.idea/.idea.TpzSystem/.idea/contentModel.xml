@@ -74,6 +74,22 @@
               </e>
             </e>
           </e>
+          <e p="Start" t="Include">
+            <e p="Controllers" t="Include">
+              <e p="StartController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="ErrorViewModel.cs" t="Include" />
+            </e>
+            <e p="RouteConfig.cs" t="Include" />
+            <e p="Views" t="Include">
+              <e p="Home" t="Include">
+                <e p="Home.cshtml" t="Include" />
+                <e p="Privacy.cshtml" t="Include" />
+                <e p="partial-cookie-consent.cshtml" t="Include" />
+              </e>
+            </e>
+          </e>
         </e>
         <e p="Assets" t="Include">
           <e p="css" t="Include">
@@ -1752,25 +1768,17 @@
           </e>
         </e>
         <e p="Controllers" t="Include">
-          <e p="HomeController.cs" t="Include" />
-        </e>
-        <e p="Models" t="Include">
-          <e p="ErrorViewModel.cs" t="Include" />
+          <e p="StartController.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Views" t="Include">
-          <e p="Home" t="Include">
-            <e p="Index.cshtml" t="Include" />
-            <e p="Privacy.cshtml" t="Include" />
-          </e>
           <e p="Shared" t="Include">
+            <e p="Index.cshtml" t="Include" />
             <e p="error.cshtml" t="Include" />
             <e p="masterpage.cshtml" t="Include" />
-            <e p="partial-cookie-consent.cshtml" t="Include" />
-            <e p="partial-validation-scripts.cshtml" t="Include" />
           </e>
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />

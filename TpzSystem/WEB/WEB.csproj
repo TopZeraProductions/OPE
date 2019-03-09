@@ -16,6 +16,9 @@
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Areas\Products\Views\Home\Index.cshtml" />
       <_ContentIncludedByDefault Remove="Areas\Products\Views\Home\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Home\Views\HomeConsult\ListProducts.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Home\Views\ProductsConsult\Home.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
     </ItemGroup>
 
 

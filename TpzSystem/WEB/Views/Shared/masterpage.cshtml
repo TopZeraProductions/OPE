@@ -14,40 +14,41 @@
     
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TpzSystem</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                        <ul class="navbar-nav flex-grow-1">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="@Url.Action("Home", "Home", new {area = "Start"})">TpzSystem</a>
+                    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
                             
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="@Url.Action("Index", "Home")">
-                                    <i class="fas fa-home"></i>
-                                    Home
-                                </a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="@Url.Action("Home", "Home", new {area = "Start"})">
+                                <i class="fas fa-home"></i>
+                                Home
+                            </a>
+                        </li>
                             
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="@Url.Action("Privacy", "Home")">Privacidade</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="@Url.Action("Privacy", "Home", new {area = "Start"})">Privacidade</a>
+                        </li>
                             
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="@Url.Action("ListProducts", "ProductsConsult", new { area = "products" })">Products</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="@Url.Action("ListProducts", "ProductsConsult", new { area = "products" })">Products</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
             
         </header>
+    
         <div class="container">
-            @{Html.RenderPartial("partial-cookie-consent");} 
-            
             <main role="main" class="pb-3">
                 @RenderBody()
             </main>
@@ -55,11 +56,12 @@
     
         <footer class="border-top footer text-muted">
             <div class="container">
-                &copy; 2019 - TpzSystem - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                &copy; 2019 - TpzSystem - <a href="@Url.Action("Home", "Home", new {area = "Start"})">Privacy</a>
             </div>
         </footer>
         
     </body>
+    
     <script src="~/Assets/lib/jquery/dist/jquery.js"></script>
     <script src="~/Assets/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="~/Assets/js/site.js" ></script>
