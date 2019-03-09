@@ -29,3 +29,5 @@
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.pdb
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.csproj.CopyComplete
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Products/Views/ProductsConsult/ListProducts.g.cshtml.cs
+/home/joao/Github/TopZera/OPE/TpzSystem/WEB/bin/Debug/netcoreapp2.2/UTIL.dll
+/home/joao/Github/TopZera/OPE/TpzSystem/WEB/bin/Debug/netcoreapp2.2/UTIL.pdb

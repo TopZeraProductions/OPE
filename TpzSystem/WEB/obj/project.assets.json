@@ -4438,6 +4438,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "UTIL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/UTIL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UTIL.dll": {}
+        }
       }
     }
   },
@@ -12147,13 +12157,19 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "UTIL/1.0.0": {
+      "type": "project",
+      "path": "../UTIL/UTIL.csproj",
+      "msbuildProject": "../UTIL/UTIL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "UTIL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12179,7 +12195,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj": {
+              "projectPath": "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -21,7 +21,11 @@
 
     <ItemGroup>
       <Folder Include="Areas\Products\Models" />
-      <Folder Include="Areas\Products\Views\Products" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\UTIL\UTIL.csproj" />
     </ItemGroup>
 
 </Project>

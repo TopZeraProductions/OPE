@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 using WEB.AppInfra.Cookies.Interface;
 using WEB.AppInfra.Cookies.Service;
+using WEB.AppInfra.Security.SessionUser;
 
 namespace WEB.AppStart {
 
@@ -22,6 +23,9 @@ namespace WEB.AppStart {
             Services.AddHttpContextAccessor(); // injeta o contexto http fora das controllers
             
             Services.AddTransient<ICookieServices, CookieServices>();
+            
+            Services.AddTransient<SessionUser, SessionUser>();
+            
         }
     }
 
