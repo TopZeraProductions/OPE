@@ -17,8 +17,15 @@ namespace WEB.AppStart {
 
             if (Env.IsDevelopment()) {
                 App.UseDeveloperExceptionPage();
-            } else {
-                App.UseExceptionHandler("/Home/Error");
+                App.UseStatusCodePages();
+            } 
+
+            if (Env.IsProduction() 
+                || Env.IsStaging()) {
+               
+                App.UseExceptionHandler("/errors/error/error");
+                App.UseStatusCodePagesWithRedirects("/errors/error/errorcode?errorCode={0}");
+ 
                 App.UseHsts();
             }
 

@@ -57,6 +57,21 @@
           <e p="Startup.cs" t="Include" />
         </e>
         <e p="Areas" t="Include">
+          <e p="Errors" t="Include">
+            <e p="Controllers" t="Include">
+              <e p="ErrorsController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="ErrorViewModel.cs" t="Include" />
+            </e>
+            <e p="RouteConfig.cs" t="Include" />
+            <e p="Views" t="Include">
+              <e p="Error" t="Include">
+                <e p="Error.cshtml" t="Include" />
+                <e p="ErrorCode.cshtml" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Products" t="Include">
             <e p="Assets" t="Include">
               <e p="css" t="Include">
@@ -76,17 +91,22 @@
           </e>
           <e p="Start" t="Include">
             <e p="Controllers" t="Include">
+              <e p="PrivacyController.cs" t="Include" />
               <e p="StartController.cs" t="Include" />
             </e>
             <e p="Models" t="Include">
-              <e p="ErrorViewModel.cs" t="Include" />
+              <e p="ViewModels" t="Include">
+                <e p="CookieConsentVM.cs" t="Include" />
+              </e>
             </e>
             <e p="RouteConfig.cs" t="Include" />
             <e p="Views" t="Include">
               <e p="Home" t="Include">
                 <e p="Home.cshtml" t="Include" />
-                <e p="Privacy.cshtml" t="Include" />
-                <e p="partial-cookie-consent.cshtml" t="Include" />
+              </e>
+              <e p="Privacy" t="Include">
+                <e p="PartialCookieConsent.cshtml" t="Include" />
+                <e p="PrivacyDetails.cshtml" t="Include" />
               </e>
             </e>
           </e>
@@ -97,7 +117,7 @@
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="js" t="Include">
-            <e p="site.js" t="Include" />
+            <e p="System.js" t="Include" />
           </e>
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">
@@ -1765,6 +1785,10 @@
               <e p="jquery.validate.unobtrusive.js" t="Include" />
               <e p="jquery.validate.unobtrusive.min.js" t="Include" />
             </e>
+            <e p="loadingOverlay" t="Include">
+              <e p="loadingOverlay.js" t="Include" />
+              <e p="loadingOverlay.min.js" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Controllers" t="Include">
@@ -1776,8 +1800,6 @@
         </e>
         <e p="Views" t="Include">
           <e p="Shared" t="Include">
-            <e p="Index.cshtml" t="Include" />
-            <e p="error.cshtml" t="Include" />
             <e p="masterpage.cshtml" t="Include" />
           </e>
           <e p="_ViewImports.cshtml" t="Include" />

@@ -1,12 +1,9 @@
-﻿using System.Diagnostics;
-
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 using WEB.AppInfra.Cookies.Interface;
 using WEB.AppInfra.Security.SessionUser;
-using WEB.Models;
 
-namespace WEB.Areas.Home.Controllers {
+namespace WEB.Areas.Start.Controllers {
 
     [Area("start")]
     public class HomeController : Controller {
@@ -30,22 +27,5 @@ namespace WEB.Areas.Home.Controllers {
             return View();
         }
         
-        [ActionName("partial-cookie-consent")]
-        public IActionResult PartialCookieConsent() {
-            
-            return View();
-        }
-        
-        public IActionResult Privacy() {
-            return View();
-        }
-
-        public IActionResult Error() {
-            return View(
-                new ErrorViewModel {
-                    RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
-                }
-            );
-        }
     }
 }

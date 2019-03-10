@@ -19,6 +19,7 @@ namespace WEB.AppStart {
             
             ConfigureProductRoute(routeBuilder);
             ConfigureStartRoute(routeBuilder);
+            ConfigureErrorsRoute(routeBuilder);
         }
     }
 }

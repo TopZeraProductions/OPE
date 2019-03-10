@@ -1,0 +1,24 @@
+﻿@model WEB.Areas.Start.Models.ViewModels.CookieConsentVM
+@{
+    var urlConsent = Url.Action("registerCookieConsent", "Privacy", new { area = "Start", option = "yes" });
+}
+
+@if (!Model.showBanner) {
+    return;
+}
+
+<div id="cookieConsent" class="alert alert-info alert-dismissible fade show" role="alert">
+    Use this space to summarize your privacy and cookie use policy. 
+    
+    <a href="@Url.Action("PrivacyDetails","Privacy", new {area = "Start"})">Leia mais sobre nossas politicas</a>.
+    
+    <button id="cookieConsentButton"
+            type="button"
+            data-dismiss="alert"
+            aria-label="Close"
+            onclick = "System.assyncRegister('@urlConsent')">
+        
+        <span aria-hidden="true">Accept</span>
+    </button>
+
+</div>

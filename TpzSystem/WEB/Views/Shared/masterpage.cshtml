@@ -15,38 +15,46 @@
     </head>
     <body>
     <header>
+        <div id="box-cookie-consent" class="content-load" data-url="@Url.Action("PartialCookieConsent","Privacy", new { area = "Start" })"></div>
+        
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" href="@Url.Action("Home", "Home", new {area = "Start"})">TpzSystem</a>
-                    
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                    
+
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                            
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="@Url.Action("Home", "Home", new {area = "Start"})">
+                            <a class="nav-link text-dark" href="@Url.Action("Home", "Home", new {
+                                                                                                    area = "Start"
+                                                                                                })">
                                 <i class="fas fa-home"></i>
                                 Home
                             </a>
                         </li>
-                            
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="@Url.Action("Privacy", "Home", new {area = "Start"})">Privacidade</a>
+                            <a class="nav-link text-dark" href="@Url.Action("PrivacyDetails", "Privacy", new {
+                                                                                                                 area = "Start"
+                                                                                                             })">Privacidade</a>
                         </li>
-                            
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="@Url.Action("ListProducts", "ProductsConsult", new { area = "products" })">Products</a>
+                            <a class="nav-link text-dark" href="@Url.Action("ListProducts", "ProductsConsult", new {
+                                                                                                                       area = "products"
+                                                                                                                   })">Products</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-            
-        </header>
+
+    </header>
     
         <div class="container">
             <main role="main" class="pb-3">
@@ -59,12 +67,12 @@
                 &copy; 2019 - TpzSystem - <a href="@Url.Action("Home", "Home", new {area = "Start"})">Privacy</a>
             </div>
         </footer>
-        
     </body>
     
     <script src="~/Assets/lib/jquery/dist/jquery.js"></script>
     <script src="~/Assets/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="~/Assets/js/site.js" ></script>
+    <script src="~/Assets/lib/loadingOverlay/loadingOverlay.min.js"></script>
+    <script src="~/Assets/js/System.js" ></script>
 
     @RenderSection("Scripts", required: false)
 </html>

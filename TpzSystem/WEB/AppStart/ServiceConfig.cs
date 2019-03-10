@@ -11,12 +11,12 @@ namespace WEB.AppStart {
 
     public partial class Startup {
         public void ConfigureServices(IServiceCollection Services) {
-            Services.Configure<CookiePolicyOptions>(
+            /*Services.Configure<CookiePolicyOptions>(
                 options => {
                     options.CheckConsentNeeded    = context => true;
                     options.MinimumSameSitePolicy = SameSiteMode.None;
                 }
-            );
+            );*/
 
             Services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 

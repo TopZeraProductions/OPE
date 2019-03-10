@@ -14,7 +14,6 @@
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.TagHelpers.input.cache
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.TagHelpers.output.cache
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.RazorCoreGenerate.cache
-/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Views/Shared/error.g.cshtml.cs
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Views/Shared/masterpage.g.cshtml.cs
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.g.cshtml.cs
@@ -27,7 +26,8 @@
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Products/Views/ProductsConsult/ListProducts.g.cshtml.cs
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/bin/Debug/netcoreapp2.2/UTIL.dll
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/bin/Debug/netcoreapp2.2/UTIL.pdb
-/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Index.g.cshtml.cs
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Home/Home.g.cshtml.cs
-/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Home/partial-cookie-consent.g.cshtml.cs
-/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Home/Privacy.g.cshtml.cs
+/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Errors/Views/Error/Error.g.cshtml.cs
+/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Errors/Views/Error/ErrorCode.g.cshtml.cs
+/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Privacy/PrivacyDetails.g.cshtml.cs
+/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Privacy/PartialCookieConsent.g.cshtml.cs
