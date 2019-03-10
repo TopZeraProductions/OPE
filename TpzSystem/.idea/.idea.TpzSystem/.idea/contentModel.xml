@@ -52,9 +52,19 @@
           </e>
         </e>
         <e p="AppStart" t="Include">
-          <e p="RouteConfig.cs" t="Include" />
-          <e p="ServiceConfig.cs" t="Include" />
-          <e p="Startup.cs" t="Include" />
+          <e p="AppSettings.cs" t="Include" />
+          <e p="AppSettingsMappers" t="Include">
+            <e p="Extensions" t="Include">
+              <e p="AppSettingsExtensions.cs" t="Include" />
+            </e>
+            <e p="Unities" t="Include">
+              <e p="ApiServicesSettings.cs" t="Include" />
+              <e p="DataBaseSettings.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Pipeline.cs" t="Include" />
+          <e p="Routing.cs" t="Include" />
+          <e p="Services.cs" t="Include" />
         </e>
         <e p="Areas" t="Include">
           <e p="Errors" t="Include">
@@ -81,7 +91,11 @@
             <e p="Controllers" t="Include">
               <e p="ProductsConsultController.cs" t="Include" />
             </e>
-            <e p="Models" t="Include" />
+            <e p="Models" t="Include">
+              <e p="ViewModels" t="Include">
+                <e p="ListProductsVM.cs" t="Include" />
+              </e>
+            </e>
             <e p="RouteConfig.cs" t="Include" />
             <e p="Views" t="Include">
               <e p="ProductsConsult" t="Include">

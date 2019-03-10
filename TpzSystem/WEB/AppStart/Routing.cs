@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Routing;
 namespace WEB.AppStart {
 
     public partial class Startup {
+        // metodo de Configuracao de rotas 
         private void ConfigureRoute(IRouteBuilder routeBuilder) {
             
             routeBuilder.MapAreaRoute(

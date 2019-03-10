@@ -1,22 +1,33 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
-using WEB.AppInfra.Cookies;
+using Microsoft.Extensions.Configuration;
 using WEB.AppInfra.Cookies.Interface;
-using WEB.AppInfra.Cookies.Service;
 using WEB.AppInfra.Security.SessionUser;
+using WEB.AppStart.AppSettingsMappers.Extensions;
+using WEB.AppStart.AppSettingsMappers.Unities;
+using WEB.Areas.Products.Models.ViewModels;
 
 namespace WEB.Areas.Products.Controllers {
 
     [Area("Products")]
     public class ProductsConsultController : Controller {
         private ICookieServices CookiesServices;
-        private SessionUser     SessionUser;
+        private IConfiguration Configuration;
         
+        private SessionUser SessionUser;
+        private DataBaseSettings DataBaseSettings;
+        private ApiServicesSettings ApiServicesSettings;
+
         public ProductsConsultController(ICookieServices _ICookieServices, 
-                                         SessionUser _SessionUser) {
+                                         SessionUser     _SessionUser, 
+                                         IConfiguration  _IConfiguration) {
             
             CookiesServices = _ICookieServices;
             SessionUser     = _SessionUser;
+            Configuration   = _IConfiguration;
+            
+            
+            DataBaseSettings    = Configuration.GetSectionMapped<DataBaseSettings>("DataBaseSettings");
+            ApiServicesSettings = Configuration.GetSectionMapped<ApiServicesSettings>("ApiServicesSettings");
         }
         
         public IActionResult Index() {
@@ -24,19 +35,22 @@ namespace WEB.Areas.Products.Controllers {
         }
 
         public IActionResult ListProducts() {
+
+            ListProductsVM ViewModel = new ListProductsVM();
+                
             SessionUser.id = 10;
             ViewBag.teste  = SessionUser.id;
-            
             SessionUser.idCrypt = "10";
             ViewBag.teste2  = SessionUser.idCrypt;
-            
             SessionUser.name = "joao";
             ViewBag.teste3 = SessionUser.name;
-            
             SessionUser.nameCrypt = "joao";
             ViewBag.teste4        = SessionUser.nameCrypt;
 
-            return View();
+            ViewModel.DataBaseSettings    = DataBaseSettings;
+            ViewModel.ApiServicesSettings = ApiServicesSettings;
+
+            return View(ViewModel);
         }
     }
 }

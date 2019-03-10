@@ -1,31 +1,24 @@
-﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 
 namespace WEB.AppStart {
 
-    public partial class Startup {
-
-        private IConfiguration Configuration { get; }
-
-        public Startup(IConfiguration _Configuration) {
-            Configuration = _Configuration;
-        }
-
+    partial class Startup {
+        // esse metodo serve para iniciar os servicos no pipeline
         public void Configure(IApplicationBuilder App,
                               IHostingEnvironment Env) {
 
-            if (Env.IsDevelopment()) {
+            if (Env.IsDevelopment()) { // caso a variavel de ambiente seja de dev
                 App.UseDeveloperExceptionPage();
                 App.UseStatusCodePages();
-            } 
+            }
 
-            if (Env.IsProduction() 
-                || Env.IsStaging()) {
-               
+            if (Env.IsProduction()
+                || Env.IsStaging()) { // caso a variavel de ambiente seja de stagging ou Production
+
                 App.UseExceptionHandler("/errors/error/error");
                 App.UseStatusCodePagesWithRedirects("/errors/error/errorcode?errorCode={0}");
- 
+
                 App.UseHsts();
             }
 
@@ -34,7 +27,7 @@ namespace WEB.AppStart {
             App.UseCookiePolicy();
             App.UseFileServer();
 
-            App.UseMvc(ConfigureRoute);
+            App.UseMvc(ConfigureRoute); //Configuraçao das rotas
         }
     }
 

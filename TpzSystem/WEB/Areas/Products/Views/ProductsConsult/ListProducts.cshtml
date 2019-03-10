@@ -1,18 +1,34 @@
+@model WEB.Areas.Products.Models.ViewModels.ListProductsVM
+
 @{
     ViewBag.Title = "Products";
     Layout = "masterpage";
 }
+
 @section styles{
     <link rel="stylesheet" href="~/Areas/Products/Assets/css/products.css" />
 }
 
 <h2>@ViewBag.teste</h2>
-
 <h2>@ViewBag.teste2</h2>
-
 <h2>@ViewBag.teste3</h2>
-
 <h2>@ViewBag.teste4</h2>
+
+
+@foreach (var Item  in Model.ApiServicesSettings.listServices) {
+    
+    <h3>@Item.name</h3>
+    <h3>@Item.path</h3>
+}
+
+@foreach (var Item in Model.DataBaseSettings.listDatabases) {
+    
+    <h3>@Item.host</h3>
+    <h3>@Item.user</h3>
+    <h3>@Item.database</h3>
+    <h3>@Item.password</h3>
+    <h3>@Item.provider</h3>
+}
 
 <a href="@Url.Action("Error", "Error", new { area ="Errors" })">Teste</a>
 

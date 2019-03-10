@@ -10,6 +10,7 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.App" />
         <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     </ItemGroup>
 
 
@@ -19,11 +20,6 @@
       <_ContentIncludedByDefault Remove="Areas\Home\Views\HomeConsult\ListProducts.cshtml" />
       <_ContentIncludedByDefault Remove="Areas\Home\Views\ProductsConsult\Home.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
-    </ItemGroup>
-
-
-    <ItemGroup>
-      <Folder Include="Areas\Products\Models" />
     </ItemGroup>
 
 
