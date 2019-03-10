@@ -1,6 +1,6 @@
 ﻿let System = new function (log, jQuery) {
     console.log(log);
-    
+
     this.init = () => {
         this.contentLoadHandler();
     };
@@ -33,7 +33,14 @@
             url,
             (data) => {
                 if (data.message !== undefined){
-                    alert(data.message)
+                    jQuery.toast({
+                        heading: 'Informativo:',
+                        text: data.message,
+                        icon: 'info',
+                        loader: true,
+                        loaderBg: '#9EC600',
+                        position: 'top-right',
+                    });
                 }
             }
         );

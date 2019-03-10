@@ -45,7 +45,7 @@ namespace WEB.Areas.Start.Controllers {
         public IActionResult registerCookieConsent(string option) {
             CookieServices.WriteCookie(".AspNet.Consent", option);
             
-            return Json(new { message = "Opçao de consentimento de cookies registrada" });
+            return Json(new { message = "Opçao de consentimento de cookies registrada!!" });
         }
     }
 }
