@@ -31,3 +31,5 @@
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Errors/Views/Error/ErrorCode.g.cshtml.cs
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Privacy/PrivacyDetails.g.cshtml.cs
 /home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Privacy/PartialCookieConsent.g.cshtml.cs
+/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Authentication/Login.g.cshtml.cs
+/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Authentication/Logout.g.cshtml.cs

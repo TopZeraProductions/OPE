@@ -3,7 +3,7 @@ namespace System.Extensions {
     public static class StringExtensions {
         public static int ToInt(this string value) {
             if (!string.IsNullOrEmpty(value)) {
-                return int.Parse(value);    
+                return int.Parse(value);
             }
             return 0;
         }

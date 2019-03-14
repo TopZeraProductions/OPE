@@ -43,19 +43,23 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="@Url.Action("ListProducts", "ProductsConsult", new { area = "products" })">Products</a>
                         </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="@Url.Action("Logout", "Authentication", new { area = "Start" })">
+                                sair
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
     </header>
-    
         <div class="container">
             <main role="main" class="pb-3">
                 @RenderBody()
             </main>
         </div>
-    
         <footer class="border-top footer text-muted">
             <div class="container">
                 &copy; 2019 - TpzSystem - <a href="@Url.Action("Home", "Home", new {area = "Start"})">Privacy</a>

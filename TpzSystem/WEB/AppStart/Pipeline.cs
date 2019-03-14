@@ -26,6 +26,7 @@ namespace WEB.AppStart {
             App.UseStaticFiles();
             App.UseCookiePolicy();
             App.UseFileServer();
+            App.UseSession();
 
             App.UseMvc(ConfigureRoute); //Configuraçao das rotas
         }

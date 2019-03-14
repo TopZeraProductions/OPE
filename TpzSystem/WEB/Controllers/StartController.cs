@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WEB.Controllers {
+using WEB.AppInfra.Security.Filters;
 
-    public class StartController : Controller {
+namespace WEB.Controllers {
+    
+    public class StartController : RestrictController {
         public IActionResult Index() {
             return RedirectToAction("Home", "Home", new {area = "Start"});
         }

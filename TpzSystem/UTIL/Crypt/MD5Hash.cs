@@ -5,9 +5,13 @@ using System.Text;
 namespace UTIL.Crypt {
 
     public static class MD5Hash {
+        public static string salt => "&!Tp25y573m2019#%";
+        
         public static string Generate(string text) {
             MD5CryptoServiceProvider MD5provider = new MD5CryptoServiceProvider();
             StringBuilder            str         = new StringBuilder();
+            
+            text += salt;
 
             byte[] valorHash = MD5provider.ComputeHash(Encoding.Default.GetBytes(text));
 

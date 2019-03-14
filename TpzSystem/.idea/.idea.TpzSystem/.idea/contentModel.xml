@@ -38,14 +38,13 @@
       <e p="WEB" t="IncludeRecursive">
         <e p="AppInfra" t="Include">
           <e p="Cookies" t="Include">
-            <e p="Interface" t="Include">
-              <e p="ICookieServices.cs" t="Include" />
-            </e>
-            <e p="Service" t="Include">
-              <e p="CookieServices.cs" t="Include" />
-            </e>
+            <e p="CookieServices.cs" t="Include" />
+            <e p="SessionServices.cs" t="Include" />
           </e>
           <e p="Security" t="Include">
+            <e p="Filters" t="Include">
+              <e p="Permissions.cs" t="Include" />
+            </e>
             <e p="SessionUser" t="Include">
               <e p="SessionUser.cs" t="Include" />
             </e>
@@ -105,16 +104,24 @@
           </e>
           <e p="Start" t="Include">
             <e p="Controllers" t="Include">
+              <e p="AuthenticationController.cs" t="Include" />
+              <e p="HomeController.cs" t="Include" />
               <e p="PrivacyController.cs" t="Include" />
-              <e p="StartController.cs" t="Include" />
             </e>
             <e p="Models" t="Include">
+              <e p="Forms" t="Include">
+                <e p="LoginForm.cs" t="Include" />
+              </e>
               <e p="ViewModels" t="Include">
                 <e p="CookieConsentVM.cs" t="Include" />
               </e>
             </e>
             <e p="RouteConfig.cs" t="Include" />
             <e p="Views" t="Include">
+              <e p="Authentication" t="Include">
+                <e p="Login.cshtml" t="Include" />
+                <e p="Logout.cshtml" t="Include" />
+              </e>
               <e p="Home" t="Include">
                 <e p="Home.cshtml" t="Include" />
               </e>
@@ -1811,6 +1818,7 @@
           </e>
         </e>
         <e p="Controllers" t="Include">
+          <e p="RestrictController.cs" t="Include" />
           <e p="StartController.cs" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />

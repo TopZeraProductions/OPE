@@ -2,11 +2,9 @@ using System;
 
 using Microsoft.AspNetCore.Http;
 
-using WEB.AppInfra.Cookies.Interface;
-
 namespace WEB.AppInfra.Cookies.Service {
 
-    public class CookieServices : ICookieServices{
+    public class CookieServices {
         
         // Dependency
         private readonly HttpContext HttpContext;
@@ -16,7 +14,7 @@ namespace WEB.AppInfra.Cookies.Service {
             HttpContext = _IHttpContextAccessor.HttpContext;
         }
 
-        public void WriteCookie(string key, string value, bool isPersistent = true) {
+        public void Write(string key, string value, bool isPersistent = true) {
             if (isPersistent) {
                 CookieOptions options = new CookieOptions();
                 options.Expires = DateTime.Now.AddDays(5);
@@ -28,18 +26,17 @@ namespace WEB.AppInfra.Cookies.Service {
             }
         }
 
-        public void ConcatCookie(string key, string value) {
-            var cookie = ReadCookie(key);
+        public void Concat(string key, string value) {
+            var cookie = Read(key);
             cookie += value;
-            WriteCookie(key, cookie);
+            Write(key, cookie);
         }
 
-        public string ReadCookie(string key) {
+        public string Read(string key) {
             return HttpContext.Request.Cookies[key] ?? "";
         }
 
-        public void DeleteCookie(string key) {
-
+        public void Delete(string key) {
             HttpContext.Response.Cookies.Delete(key);
         }
     }
