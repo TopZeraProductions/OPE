@@ -13,7 +13,7 @@ namespace WEB.AppStart {
 
     public partial class Startup {
         // Essa classe serve para Definiçao de resoluçao de dependencias
-        public void ConfigureServices(IServiceCollection Services) {
+        public void ConfigureServices(IServiceCollection services) {
             /*Services.Configure<CookiePolicyOptions>(// for cookie police (only write cookies if client accept)
                 options => {
                     options.CheckConsentNeeded    = context => true;
@@ -21,24 +21,24 @@ namespace WEB.AppStart {
                 }
             );*/
 
-            Services.AddMvc(// for global filters
+            services.AddMvc(// for global filters
                 options=> {
                     // options.Filters.Add(new LoggedFilter()); // instance
-                    // options.Filters.Add(typeof(LoggedFilter)); // type
+                    // options.Filters.Add(typeof(LoggedFilter)); // type (if need DI)
                 }
             )
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             
-            Services.AddHttpContextAccessor(); // injeta o contexto http fora das controllers
+            services.AddHttpContextAccessor(); // injeta o contexto http fora das controllers
 
-            Services.AddTransient<CookieServices, CookieServices>();
-            Services.AddTransient<SessionUser, SessionUser>();
-            Services.AddTransient<SessionServices, SessionServices>();
-            Services.AddScoped<LoggedFilter>();
-            Services.AddScoped<LoggedAccess>();
+            services.AddTransient<CookieServices, CookieServices>();
+            services.AddTransient<SessionUser, SessionUser>();
+            services.AddTransient<SessionServices, SessionServices>();
+            services.AddScoped<LoggedFilter>();
+            services.AddScoped<LoggedAccess>();
             
-            Services.AddDistributedMemoryCache();
-            Services.AddSession( // session configuration
+            services.AddDistributedMemoryCache();
+            services.AddSession( // session configuration
                 options => {
                     options.Cookie.Name         = "tpz_session";
                     options.Cookie.HttpOnly     = true;
@@ -46,7 +46,7 @@ namespace WEB.AppStart {
                     options.Cookie.IsEssential  = true;
                     options.Cookie.SameSite     = SameSiteMode.Strict;
                 }
-            ); 
+            );
         }
     }
 }

@@ -48,7 +48,7 @@ namespace WEB.AppInfra.Security.Filters {
         }
         
         public override void OnActionExecuting(ActionExecutingContext context) {
-            if (SessionUser.id == 0) {
+            if (!SessionUser.IsLogged()) {
                 RedirectToAuthScreen(context);
             }
             

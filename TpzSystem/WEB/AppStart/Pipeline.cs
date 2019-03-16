@@ -5,30 +5,30 @@ namespace WEB.AppStart {
 
     partial class Startup {
         // esse metodo serve para iniciar os servicos no pipeline
-        public void Configure(IApplicationBuilder App,
-                              IHostingEnvironment Env) {
+        public void Configure(IApplicationBuilder app,
+                              IHostingEnvironment env) {
 
-            if (Env.IsDevelopment()) { // caso a variavel de ambiente seja de dev
-                App.UseDeveloperExceptionPage();
-                App.UseStatusCodePages();
+            if (env.IsDevelopment()) { // caso a variavel de ambiente seja de dev
+                app.UseDeveloperExceptionPage();
+                app.UseStatusCodePages();
             }
 
-            if (Env.IsProduction()
-                || Env.IsStaging()) { // caso a variavel de ambiente seja de stagging ou Production
+            if (env.IsProduction()
+                || env.IsStaging()) { // caso a variavel de ambiente seja de stagging ou Production
 
-                App.UseExceptionHandler("/errors/error/error");
-                App.UseStatusCodePagesWithRedirects("/errors/error/errorcode?errorCode={0}");
+                app.UseExceptionHandler("/errors/error/error");
+                app.UseStatusCodePagesWithRedirects("/errors/error/errorcode?errorCode={0}");
 
-                App.UseHsts();
+                app.UseHsts();
             }
 
-            App.UseHttpsRedirection();
-            App.UseStaticFiles();
-            App.UseCookiePolicy();
-            App.UseFileServer();
-            App.UseSession();
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseCookiePolicy();
+            app.UseFileServer();
+            app.UseSession();
 
-            App.UseMvc(ConfigureRoute); //Configuraçao das rotas
+            app.UseMvc(ConfigureRoute); //Configuraçao das rotas
         }
     }
 

@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
-using WEB.AppInfra.Cookies.Service;
 using WEB.AppInfra.Security.SessionUserConfiguration;
-using WEB.AppStart.Models.Forms;
+using WEB.Areas.Start.Models.Forms;
 
 namespace WEB.Areas.Start.Controllers {
     
@@ -22,16 +21,19 @@ namespace WEB.Areas.Start.Controllers {
             if (SessionUser.id > 0) {
                 return RedirectToAction("Index", "Start");
             }
-            
-            SessionUser.id = 12545668;
-            
+           
             return View();
         }
         
         [HttpPost]
         public IActionResult LoginRegister(LoginForm Form) {
+            if (Form.login == "joao"
+                && Form.password == "123123") {
+                
+                SessionUser.id = 12545668;
+            }
             
-            return Json(new { name = "ok" });
+            return RedirectToAction("Login");
         }
         
         public IActionResult Logout() {

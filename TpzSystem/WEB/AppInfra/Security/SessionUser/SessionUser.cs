@@ -19,7 +19,7 @@ namespace WEB.AppInfra.Security.SessionUserConfiguration {
             CookieServices  = _CookieServices;
             SessionServices = _SessionServices;
         }
-        
+            
         public int id {
             get {
                 var client = CookieServices.Read("tpz_nuafsta");
@@ -46,6 +46,10 @@ namespace WEB.AppInfra.Security.SessionUserConfiguration {
             set => CookieServices.Write("tpz_ratyuism", MD5Hash.Generate(value));
         }
 
+        public bool IsLogged() {
+            return id > 0;
+        }
+        
         public void ClearSessions() {
             CookieServices.Delete("tpz_nuafsta");
             SessionServices.Clear();

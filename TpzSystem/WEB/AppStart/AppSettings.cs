@@ -19,14 +19,17 @@ namespace WEB.AppStart {
         private IConfiguration Configuration { get; }
         
         // recebe as configuracoes do appsettings.json
-        public Startup(IConfiguration _Configuration) {
+        public Startup(IConfiguration _IConfiguration) {
             
-            Configuration = _Configuration;
+            Configuration = _IConfiguration;
+            
+            ShowSettings();
+        }
 
-            var logPath     = Configuration.GetValue("logPath");
-            var urlServices = Configuration.GetValue("urlServices");
-            var ApiAuth     = Configuration.GetValue("ApiAuth");
+        private void ShowSettings() {
+            Console.WriteLine(Configuration.GetValue("logPath"));
+            Console.WriteLine(Configuration.GetValue("urlServices"));
+            Console.WriteLine(Configuration.GetValue("ApiAuth"));
         }
     }
-
 }

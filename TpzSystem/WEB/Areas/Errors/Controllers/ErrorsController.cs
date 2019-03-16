@@ -7,7 +7,7 @@ using WEB.Areas.Errors.Models;
 
 namespace WEB.Areas.Errors.Controllers {
 
-    [Area("errors")]
+    [Area("errors"), AllowAnonymous]
     public class ErrorController : Controller {
         
         public IActionResult Error() { // start/Home/Error
@@ -23,8 +23,8 @@ namespace WEB.Areas.Errors.Controllers {
             var viewModel = new ErrorViewModel();
             viewModel.RequestId     = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
             viewModel.ShowRequestId = !string.IsNullOrEmpty(viewModel.RequestId);
-            viewModel.errorCode = errorCode.ToString();
-            viewModel.observations = "An error was ocurring the code is: " + errorCode;
+            viewModel.errorCode     = errorCode;
+            viewModel.observations  = "An error was ocurring the code is: " + errorCode;
                 
             return View(viewModel);
         }

@@ -1,6 +1,12 @@
+@model WEB.Areas.Start.Models.Forms.LoginForm 
 @{
     ViewBag.Title = "title";
     Layout = null;
 }
 
 <h2>Login</h2>
+<form action="@Url.Action("LoginRegister", "Authentication", new { area = "Start"})" method="post">
+    @Html.TextBoxFor(c => c.login)
+    @Html.PasswordFor(c => c.password)
+    <button>Enviar</button>
+</form>

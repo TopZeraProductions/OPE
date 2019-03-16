@@ -13,6 +13,9 @@
           <e p="IntExtensions.cs" t="Include" />
           <e p="StringExtensions.cs" t="Include" />
         </e>
+        <e p="FtpServices" t="Include">
+          <e p="Example.cs" t="Include" />
+        </e>
         <e p="Populate" t="Include">
           <e p="Data" t="Include">
             <e p="MailProviders.cs" t="Include" />
