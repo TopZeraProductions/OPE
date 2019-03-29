@@ -1,12 +1,109 @@
 ﻿@{
-    Layout = "masterpage";
+    Layout = "";
     ViewBag.title = "Home Page";
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Início</title>
+    <link rel="stylesheet" type="text/css" href="~/Areas/Start/assets/css/dashboard.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="assets/js/style.js"></script>
+
+</head>
+<body class="dashboard">
+<header>
+    <nav>
+        <div class="ul_left">
+            <ul class="ul_nav">
+                <li>
+                    <a href="@Url.Action("Home", "Home")">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="@Url.Action("Home", "Home")">Inicio</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("ClientesCadastro", "Home")">Cadastro de Clientes</a>
+                </li>
+                <!-- 	<li><a href="#"></a></li>
+                <li><a href="#"></a></li> -->
+            </ul>
+        </div>
+        <div class="ul_right">
+            <div class="right">
+                <h4>TpzSystem. <i class="fas fa-angle-down icon-arrow"></i></h4>
+                <div class="menu_user">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-cog"></i>Opções
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Logout", "Authentication", new { area = "Start"})"><i class="fas fa-sign-out-alt"></i>Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="clear"></div>
+
+</header>
+
+<div class="content">
+    <h1>Tpz System</h1>
+    <hr>
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-pizza-slice"></i>
+            </div>
+            <div class="card-body">
+                <h3>Ultimos pedidos</h3>
+            </div>
+            <div class="card-footer">
+                <a href="sala.html">Visualizar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-pizza-slice"></i>
+            </div>
+            <div class="card-body">
+                <h3>Estoque de produtos</h3>
+
+
+            </div>
+            <div class="card-footer">
+                <a href="sala.html">Visualizar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-pizza-slice"></i>
+            </div>
+            <div class="card-body">
+                <h3>Clientes cadastrados</h3>
+            </div>
+            <div class="card-footer">
+                <a href="@Url.Action("ClientesListagem", "Home")">Visualizar</a>
+            </div>
+        </div>
+    </div>
 </div>
 
-<h2>@ViewBag.Sessao</h2>
-<h2>@ViewBag.SessaoCrypt</h2>
+</body>
+</html>

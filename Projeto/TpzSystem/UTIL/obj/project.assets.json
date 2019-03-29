@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
+      "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj",
       "projectName": "UTIL",
-      "projectPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
+      "projectPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj",
       "packagesPath": "/home/notim/.nuget/packages/",
-      "outputPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/obj/",
+      "outputPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/notim/.nuget/NuGet/NuGet.Config"

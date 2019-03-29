@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_TpzSystem.4100199.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_TpzSystem.-1729103237.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="HOMOLOG" t="IncludeRecursive">
         <e p="FtpServices" t="Include">
@@ -140,6 +140,8 @@
                 <e p="Login.cshtml" t="Include" />
               </e>
               <e p="Home" t="Include">
+                <e p="ClientesCadastro.cshtml" t="Include" />
+                <e p="ClientesListagem.cshtml" t="Include" />
                 <e p="Home.cshtml" t="Include" />
               </e>
               <e p="Privacy" t="Include">
@@ -149,11 +151,15 @@
             </e>
             <e p="assets" t="Include">
               <e p="css" t="Include">
+                <e p="cadastro.css" t="Include" />
+                <e p="dashboard.css" t="Include" />
                 <e p="style.css" t="Include" />
               </e>
               <e p="images" t="Include">
+                <e p="9980060-pizza-and-vegetables-on-a-red-background.jpg" t="Include" />
                 <e p="bg-login--.jpg" t="Include" />
                 <e p="bg-login.jpg" t="Include" />
+                <e p="pizza-1209748__340.jpg" t="Include" />
               </e>
             </e>
           </e>

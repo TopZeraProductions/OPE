@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/TpzSystem/HOMOLOG/HOMOLOG.csproj",
+      "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/HOMOLOG.csproj",
       "projectName": "HOMOLOG",
-      "projectPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/HOMOLOG/HOMOLOG.csproj",
+      "projectPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/HOMOLOG.csproj",
       "packagesPath": "/home/notim/.nuget/packages/",
-      "outputPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/HOMOLOG/obj/",
+      "outputPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/notim/.config/NuGet/NuGet.Config"

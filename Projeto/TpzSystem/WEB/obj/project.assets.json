@@ -12188,11 +12188,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/TpzSystem/WEB/WEB.csproj",
+      "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/WEB.csproj",
       "projectName": "WEB",
-      "projectPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/WEB/WEB.csproj",
+      "projectPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/WEB.csproj",
       "packagesPath": "/home/notim/.nuget/packages/",
-      "outputPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/WEB/obj/",
+      "outputPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/notim/.nuget/NuGet/NuGet.Config"
@@ -12206,8 +12206,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj": {
-              "projectPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj"
+            "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj": {
+              "projectPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj"
             }
           }
         }

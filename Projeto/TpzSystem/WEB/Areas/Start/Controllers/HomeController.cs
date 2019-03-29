@@ -29,11 +29,15 @@ namespace WEB.Areas.Start.Controllers {
         }
 
         public IActionResult Home() {
-            SessionServices.Write("SESSION", "Teste de sessao de requisiçao");
             
-            ViewBag.Sessao      = SessionServices.Read("SESSION");
-            ViewBag.SessaoCrypt = SessionServices.Read("TpzSystem");
-            
+            return View();
+        }
+
+        public IActionResult ClientesListagem() {
+            return View();
+        }
+        
+        public IActionResult ClientesCadastro() {
             return View();
         }
     }
