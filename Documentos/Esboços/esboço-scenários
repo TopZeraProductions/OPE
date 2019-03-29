@@ -1,0 +1,31 @@
+Lista de Necessidades
+    > Gerenciamento de clientes
+    > Gerenciamento de fornecedores
+    > Gerenciamento de produtos
+    > Gerenciador de pedidos
+    > Fluxo de caixa
+    > Gerenciamento de entregas
+    > Gerenciamento de estoque
+    
+Cenários:
+    > Cadastro de clientes
+    > Cadastro de fornecedores
+    > controle de pedidos
+    > Planejamento de estoque
+    > Pagamento de fornecedores
+    > Faturamento de pedidos
+    > Controle de entrega
+    
+Usuarios de sistema
+    Adiministrador
+        > Pagamento de fornecedores
+        > Faturamento
+        > Planejamento de estoque
+        > Controle de pedidos
+        > Controle de entregas
+        > Faturamento de pedidos
+        
+    Operador (caixa) 
+        > Controle de pedidos
+        > Controle de entregas
+        > Faturamento de pedidos
