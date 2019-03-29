@@ -4,9 +4,31 @@
     Layout = null;
 }
 
-<h2>Login</h2>
-<form action="@Url.Action("LoginRegister", "Authentication", new { area = "Start"})" method="post">
-    @Html.TextBoxFor(c => c.login)
-    @Html.PasswordFor(c => c.password)
-    <button>Enviar</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="~/Assets/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Assets/lib/fontawesome-free-5/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="~/Assets/css/site.css" />
+    <link rel="stylesheet" type="text/css" href="~/Assets/lib/jquery-toast-plugin/jquery.toast.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="~/Areas/Start/assets/css/style.css">
+</head>
+    @if (ViewBag.Success == false) {
+        <div class="alert alert-danger">
+            <i class="fa fa-alert"></i>
+            Login ou senha invalida
+        </div>
+    }
+
+    <body>
+        <form action="@Url.Action("LoginRegister", "Authentication", new { area = "Start"})" method="post">
+            <h2>TPZ System</h2>
+            @Html.TextBoxFor(c => c.login, new{ placeholder = "Digite o seu login"})
+            @Html.PasswordFor(c => c.password, new{ placeholder = "Digite o sua senha"})
+            <button type="submit">Entrar</button>
+        </form>
+    </body>
+</html>

@@ -38,7 +38,7 @@ namespace WEB.Areas.Products.Controllers {
             return RedirectToAction("ListProducts");
         }
         
-        [ServiceFilter(typeof(LoggedAccess))]
+        [HttpGet, ServiceFilter(typeof(LoggedAccess))]
         public IActionResult ListProducts() {
 
             ListProductsVM ViewModel = new ListProductsVM();

@@ -5,30 +5,60 @@ using System.Text;
 
 namespace UTIL.ftpServices {
 
+
     public class WebRequestGetExample {
-        public static void Main() {
+        public static NetworkCredential NetworkCredential => 
+            new NetworkCredential("paulino.joaovitor@yahoo.com.br", "topzera1234");
+        
+        public static string server => "ftp://localhost";
             
-            FtpWebRequest request = (FtpWebRequest) WebRequest.Create("ftp://www.contoso.com/test.htm"); // Get the object used to communicate with the server
-            
-            request.Method = WebRequestMethods.Ftp.UploadFile;
-            request.Credentials = new NetworkCredential("anonymous", "janeDoe@contoso.com"); // This example assumes the FTP site uses anonymous logon.
+        public static void Test() {
+            StreamReader sourceStream = new StreamReader("testfile.txt");
+            var          fileContents = Encoding.UTF8.GetBytes(sourceStream.ReadToEnd());
+            sourceStream.Close();
 
-            byte[] fileContents; // Get the object used to communicate with the server
+            FtpWebRequest FtpWebRequest = (FtpWebRequest) WebRequest.Create("ftp://localhost");
+            FtpWebRequest.Method        = WebRequestMethods.Ftp.UploadFile;
+            FtpWebRequest.Credentials   = new NetworkCredential("paulino.joaovitor@yahoo.com.br", "topzera1234");
+            FtpWebRequest.ContentLength = fileContents.Length;
 
-            using (StreamReader sourceStream = new StreamReader("testfile.txt")) {
-                fileContents = Encoding.UTF8.GetBytes(sourceStream.ReadToEnd());
-            }
+            Stream requestStream = FtpWebRequest.GetRequestStream();
+            requestStream.Write(fileContents, 0, fileContents.Length);
+            requestStream.Close();
 
-            request.ContentLength = fileContents.Length;
+            FtpWebResponse response = (FtpWebResponse) FtpWebRequest.GetResponse();
+            Console.WriteLine($"Upload File Complete, status {response.StatusDescription}");
+            response.Close();
+        }
 
-            using (Stream requestStream = request.GetRequestStream()) {
-                requestStream.Write(fileContents, 0, fileContents.Length);
-            }
+        public static void SendFtpArchieve(string archieveAddress) {
+            try {
+                
+                FileInfo FileInfo = new FileInfo(archieveAddress);
+                
+                FtpWebRequest request = (FtpWebRequest) WebRequest.Create(new Uri(server));
+                
+                request.Method        = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials   = NetworkCredential;
+                request.UseBinary     = true;
+                request.ContentLength = FileInfo.Length;
 
-            using (FtpWebResponse response = (FtpWebResponse) request.GetResponse()) {
-                Console.WriteLine($"Upload File Complete, status {response.StatusDescription}");
+                using (FileStream fs = FileInfo.OpenRead()) {
+                    byte[] buffer    = new byte[2048];
+                    int    bytesSent = 0;
+                    int    bytes     = 0;
+
+                    using (Stream stream = request.GetRequestStream()) {
+                        while (bytesSent < FileInfo.Length) {
+                            bytes = fs.Read(buffer, 0, buffer.Length);
+                            stream.Write(buffer, 0, bytes);
+                            bytesSent += bytes;
+                        }
+                    }
+                }
+            } catch (Exception ex) {
+                throw ex;
             }
         }
     }
-
 }

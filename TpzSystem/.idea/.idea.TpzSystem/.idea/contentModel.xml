@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_TpzSystem.-375196925.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_TpzSystem.4100199.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="HOMOLOG" t="IncludeRecursive">
+        <e p="FtpServices" t="Include">
+          <e p="Example.cs" t="Include" />
+        </e>
+        <e p="HOMOLOG.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="HOMOLOG.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="TpzSystem.sln" t="IncludeFlat" />
       <e p="UTIL" t="IncludeRecursive">
         <e p="Crypt" t="Include">
@@ -123,7 +138,6 @@
             <e p="Views" t="Include">
               <e p="Authentication" t="Include">
                 <e p="Login.cshtml" t="Include" />
-                <e p="Logout.cshtml" t="Include" />
               </e>
               <e p="Home" t="Include">
                 <e p="Home.cshtml" t="Include" />
@@ -131,6 +145,15 @@
               <e p="Privacy" t="Include">
                 <e p="PartialCookieConsent.cshtml" t="Include" />
                 <e p="PrivacyDetails.cshtml" t="Include" />
+              </e>
+            </e>
+            <e p="assets" t="Include">
+              <e p="css" t="Include">
+                <e p="style.css" t="Include" />
+              </e>
+              <e p="images" t="Include">
+                <e p="bg-login--.jpg" t="Include" />
+                <e p="bg-login.jpg" t="Include" />
               </e>
             </e>
           </e>

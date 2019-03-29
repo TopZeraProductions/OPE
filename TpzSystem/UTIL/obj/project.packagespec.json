@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
+    "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
     "projectName": "UTIL",
-    "projectPath": "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
-    "outputPath": "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/obj/",
+    "projectPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
+    "outputPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp2.2"

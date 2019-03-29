@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/joao/Github/TopZera/OPE/TpzSystem/WEB/WEB.csproj",
+    "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/TpzSystem/WEB/WEB.csproj",
     "projectName": "WEB",
-    "projectPath": "/home/joao/Github/TopZera/OPE/TpzSystem/WEB/WEB.csproj",
-    "outputPath": "/home/joao/Github/TopZera/OPE/TpzSystem/WEB/obj/",
+    "projectPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/WEB/WEB.csproj",
+    "outputPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/WEB/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp2.2"
@@ -12,8 +12,8 @@
     "frameworks": {
       "netcoreapp2.2": {
         "projectReferences": {
-          "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj": {
-            "projectPath": "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj"
+          "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj": {
+            "projectPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj"
           }
         }
       }
@@ -30,7 +30,7 @@
         "Microsoft.AspNetCore.App": {
           "suppressParent": "All",
           "target": "Package",
-          "version": "[2.2.0, )",
+          "version": "[2.2.3, )",
           "autoReferenced": true
         },
         "Microsoft.AspNetCore.Razor.Design": {

@@ -688,19 +688,19 @@
     ]
   },
   "packageFolders": {
-    "/home/joao/.nuget/packages/": {}
+    "/home/notim/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
+      "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
       "projectName": "UTIL",
-      "projectPath": "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
-      "packagesPath": "/home/joao/.nuget/packages/",
-      "outputPath": "/home/joao/Github/TopZera/OPE/TpzSystem/UTIL/obj/",
+      "projectPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/UTIL.csproj",
+      "packagesPath": "/home/notim/.nuget/packages/",
+      "outputPath": "/home/notim/GitHub/TopZera/OPE/TpzSystem/UTIL/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/joao/.nuget/NuGet/NuGet.Config"
+        "/home/notim/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

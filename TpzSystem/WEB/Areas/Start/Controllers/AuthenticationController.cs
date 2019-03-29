@@ -18,16 +18,17 @@ namespace WEB.Areas.Start.Controllers {
 
         [HttpGet]
         public IActionResult Login() {
+            
             if (SessionUser.id > 0) {
                 return RedirectToAction("Index", "Start");
             }
-           
+            
             return View();
         }
         
         [HttpPost]
         public IActionResult LoginRegister(LoginForm Form) {
-            if (Form.login == "joao"
+            if (Form.login == "topzera"
                 && Form.password == "123123") {
                 
                 SessionUser.id = 12545668;
