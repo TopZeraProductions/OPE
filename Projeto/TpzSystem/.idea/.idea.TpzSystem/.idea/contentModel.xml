@@ -54,6 +54,11 @@
         </e>
       </e>
       <e p="WEB" t="IncludeRecursive">
+        <e p="AppHelpers" t="Include">
+          <e p="HtmlHelpers" t="Include">
+            <e p="ContentLoad.cs" t="Include" />
+          </e>
+        </e>
         <e p="AppInfra" t="Include">
           <e p="Cookies" t="Include">
             <e p="CookieServices.cs" t="Include" />
@@ -121,6 +126,15 @@
             </e>
           </e>
           <e p="Start" t="Include">
+            <e p="Assets" t="Include">
+              <e p="css" t="Include" />
+              <e p="images" t="Include">
+                <e p="9980060-pizza-and-vegetables-on-a-red-background.jpg" t="Include" />
+                <e p="bg-login--.jpg" t="Include" />
+                <e p="bg-login.jpg" t="Include" />
+                <e p="pizza-1209748__340.jpg" t="Include" />
+              </e>
+            </e>
             <e p="Controllers" t="Include">
               <e p="AuthenticationController.cs" t="Include" />
               <e p="HomeController.cs" t="Include" />
@@ -149,24 +163,14 @@
                 <e p="PrivacyDetails.cshtml" t="Include" />
               </e>
             </e>
-            <e p="assets" t="Include">
-              <e p="css" t="Include">
-                <e p="cadastro.css" t="Include" />
-                <e p="dashboard.css" t="Include" />
-                <e p="style.css" t="Include" />
-              </e>
-              <e p="images" t="Include">
-                <e p="9980060-pizza-and-vegetables-on-a-red-background.jpg" t="Include" />
-                <e p="bg-login--.jpg" t="Include" />
-                <e p="bg-login.jpg" t="Include" />
-                <e p="pizza-1209748__340.jpg" t="Include" />
-              </e>
-            </e>
           </e>
         </e>
         <e p="Assets" t="Include">
           <e p="css" t="Include">
+            <e p="cadastro.css" t="Include" />
+            <e p="dashboard.css" t="Include" />
             <e p="site.css" t="Include" />
+            <e p="style.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="js" t="Include">

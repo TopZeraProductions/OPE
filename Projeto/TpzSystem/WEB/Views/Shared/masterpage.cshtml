@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using WEB.AppHelpers.HtmlHelpers
+
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -15,7 +17,8 @@
     </head>
     <body>
     <header>
-        <div id="box-cookie-consent" class="content-load" data-url="@Url.Action("PartialCookieConsent","Privacy", new { area = "Start" })"></div>
+    
+        @Html.ContentLoad("box-cookie-consent",@Url.Action("PartialCookieConsent","Privacy", new { area = "Start" }))
         
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -76,4 +79,105 @@
     <script type="text/javascript" src="~/Assets/js/System.js" ></script>
 
     @RenderSection("Scripts", required: false)
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="~/Areas/Start/assets/css/cadastro.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+<body class="cad-aluno cad">
+<aside>
+    <div class="logo">
+        <h2>
+            <span>TPZ SYSTEM</span>
+            <span class="logo_mini">T</span>
+        </h2>
+    </div>
+    <div class="nav_ul">
+        <ul>
+            <li>
+                <a href="dashboard.html">
+                    <i class="fas fa-home"></i>
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-plus icon-add"></i>
+                    <span>Cadastrar</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="cad-aluno.html">Alunos</a>
+                    </li>
+                    <li>
+                        <a href="cad-professor.html">Professores</a>
+                    </li>
+                    <li>
+                        <a href="cad-disciplina.html">Disciplina</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-list-ul"></i>
+                    <span>Listar</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="list_aluno.html">Alunos</a>
+                    </li>
+                    <li>
+                        <a href="#">Professores</a>
+                    </li>
+                    <li>
+                        <a href="#">Disciplinas</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-clipboard-list icon-lanc"></i>Lançamento de Notas</a></li>
+            <li><a href="#"><i class="fas fa-clipboard-check icon-check"></i>Fechamento de Notas</a></li>
+            <li><a href="#"><i class="fas fa-eraser icon-eraser"></i>Corrigir Atividades</a></li> -->
+        </ul>
+    </div>
+</aside>
+
+<header>
+    <div class="user">
+        <h4>Ramon C. <i class="fas fa-angle-down icon-arrow"></i></h4>
+        <div class="menu_user">
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-cog"></i>Opções</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+    @RenderBody()
+</main>
+
+</body>
+    <!--Setor de scripts do sistema-->
+    <script type="text/javascript" src="~/Assets/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Assets/lib/fontawesome-free-5/js/all.js"></script>
+    <script type="text/javascript" src="~/Assets/lib/gasparesganga-jquery-loading-overlay/loadingoverlay.js"></script>
+    <script type="text/javascript" src="~/Assets/lib/jquery-toast-plugin/jquery.toast.min.js"></script>
+    <script type="text/javascript" src="~/Assets/js/System.js" ></script>
+    
+    @RenderSection("Scripts", required: false)
+    <!--fim Setor de scripts do sistema-->
 </html>

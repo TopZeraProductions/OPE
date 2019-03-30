@@ -27,4 +27,9 @@
       <ProjectReference Include="..\UTIL\UTIL.csproj" />
     </ItemGroup>
 
+
+    <ItemGroup>
+      <Folder Include="Areas\Start\Assets\css" />
+    </ItemGroup>
+
 </Project>
