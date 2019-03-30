@@ -127,7 +127,9 @@
           </e>
           <e p="Start" t="Include">
             <e p="Assets" t="Include">
-              <e p="css" t="Include" />
+              <e p="css" t="Include">
+                <e p="authentication-style.css" t="Include" />
+              </e>
               <e p="images" t="Include">
                 <e p="9980060-pizza-and-vegetables-on-a-red-background.jpg" t="Include" />
                 <e p="bg-login--.jpg" t="Include" />
@@ -167,10 +169,9 @@
         </e>
         <e p="Assets" t="Include">
           <e p="css" t="Include">
-            <e p="cadastro.css" t="Include" />
+            <e p="System.css" t="Include" />
             <e p="dashboard.css" t="Include" />
             <e p="site.css" t="Include" />
-            <e p="style.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="js" t="Include">
@@ -1864,6 +1865,8 @@
         <e p="Views" t="Include">
           <e p="Shared" t="Include">
             <e p="masterpage.cshtml" t="Include" />
+            <e p="partial-lateral-menu.cshtml" t="Include" />
+            <e p="partial-topo-sistema.cshtml" t="Include" />
           </e>
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />

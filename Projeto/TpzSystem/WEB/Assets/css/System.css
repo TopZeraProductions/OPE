@@ -1,24 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700');
-
-/*==============================
-	DASHBOARD
-===============================*/
 body {
     background: #e5e5e5;
     font-family: 'Poppins', sans-serif;
 }
-
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 a {
     text-decoration: none;
 }
 
-aside {
+#menu-lateral-sistema {
     position: fixed;
     z-index: 50;
     background: #384452;
@@ -28,10 +21,11 @@ aside {
     text-align: center;
     height: 100%;
     transition: 0.7s;
+    padding: 0;
 }
 
-aside .logo {
-    cursor: pointer;
+#menu-lateral-sistema .logo {
+    
     color: #dedede;
     height: 60px;
     background: #384452;
@@ -41,18 +35,18 @@ aside .logo {
     justify-content: center;
 }
 
-aside .logo h2 span.logo_mini {
+#menu-lateral-sistema .logo h2 span.logo_mini {
     display: none;
 }
 
-aside .nav_ul {
+#menu-lateral-sistema .nav_ul {
     display: flex;
     align-items: center;
     padding: 20px;
     padding-top: 54px;
 }
 
-ul.submenu {
+#menu-lateral-sistema ul.submenu {
     display: none;
     position: absolute;
     top: 0;
@@ -64,74 +58,86 @@ ul.submenu {
     padding: 12px;
 }
 
-aside ul > li:hover > .submenu {
+#menu-lateral-sistema ul > li:hover > .submenu {
     display: block;
     background: #3a4b66;
     box-shadow: 2px 2px 6px 0px #283446a8;
 }
 
-aside ul > li:hover > a {
+#menu-lateral-sistema ul > li:hover > a {
     background: #4272d726;
 }
 
-aside .nav_ul ul li a {
+#menu-lateral-sistema .nav_ul ul li a {
     color: #fff;
     width: auto;
     display: block;
     padding: 13px 10px;
 }
 
-aside .nav_ul ul {
+#menu-lateral-sistema .nav_ul ul {
     text-align: left;
     width: 100%;
 }
 
-aside .nav_ul ul li {
+#menu-lateral-sistema .nav_ul ul li {
     position: relative;
 }
 
-aside .nav_ul li .fas {
+#menu-lateral-sistema .nav_ul li .fas {
     padding-right: 17px;
     color: #866a6a !important;
     font-size: 20px;
 }
 
-/*aside .nav_ul li .icon-add{ color: #09bd4a; }
-aside .nav_ul li .icon-lanc{ color: #7d3204; }
-aside .nav_ul li .icon-check{ color: #7b881d; }
-aside .nav_ul li .icon-eraser{ color: #b50606; }*/
-
-aside.active {
+#menu-lateral-sistema .active {
     width: 70px;
 }
 
-aside.active .logo h2 span {
+#menu-lateral-sistema .active .logo h2 span {
     display: none;
 }
 
-aside.active .logo h2 span.logo_mini {
+#menu-lateral-sistema .active .logo h2 span.logo_mini {
     display: block !important;
 }
 
-aside.active .nav_ul ul li a span {
+#menu-lateral-sistema .active .nav_ul ul li a span {
     display: none;
 }
 
-aside.active .nav_ul {
+#menu-lateral-sistema .active .nav_ul {
     padding: 0;
     padding-top: 20px;
 }
 
-aside.active ul.submenu {
+#menu-lateral-sistema .active ul.submenu {
     right: -142px;
 }
 
-aside.active .nav_ul ul li a {
+#menu-lateral-sistema .active .nav_ul ul li a {
     padding: 13px 24px;
 }
+#menu-lateral-sistema .item-menu {
+    cursor: pointer;
 
+    background-color: #43546E;
+    text-align: left;
+    border-radius: 0;
+}
+#menu-lateral-sistema a{
+    color: #f5f5f5;
+    font-weight: bold;
+}
+#menu-lateral-sistema .sub-item {
+    cursor: pointer;
 
-header {
+    background-color: #FFFFFF;
+    text-align: left;
+    border-radius: 0;
+}
+
+#topo-sistema {
     position: fixed;
     right: 0;
     height: 60px;
@@ -142,34 +148,34 @@ header {
     border-left: 1px solid #343140;
 }
 
-header .user {
+#topo-sistema .user {
     float: right;
     padding-right: 100px;
     cursor: pointer;
 }
 
-header .user .icon-arrow {
+#topo-sistema .user .icon-arrow {
     padding-left: 10px;
 }
 
-header .user .menu_user {
+#topo-sistema .user .menu_user {
     display: none;
     background: #fff;
     position: absolute;
     border-radius: 7px;
 }
 
-header .user:hover > .menu_user {
+#topo-sistema .user:hover > .menu_user {
     display: block;
 }
 
-header .user .menu_user ul li a {
+#topo-sistema .user .menu_user ul li a {
     display: block;
     padding: 10px 29px;
     color: #ababab;
 }
 
-header .user .menu_user:before {
+#topo-sistema .user .menu_user:before {
     content: '';
     width: 0;
     height: 0;
@@ -183,15 +189,15 @@ header .user .menu_user:before {
     margin: 0 auto;
 }
 
-header .user .menu_user ul {
+#topo-sistema .user .menu_user ul {
     padding-top: 10px;
 }
 
-header .user .menu_user ul li:last-child {
+#topo-sistema .user .menu_user ul li:last-child {
     border-top: 1px solid #ece9e9;
 }
 
-header .user .menu_user ul li i {
+#topo-sistema .user .menu_user ul li i {
     margin-right: 10px;
 }
 
@@ -446,10 +452,6 @@ header .user .menu_user ul li i {
     font-weight: bold;
     font-style: italic;
 }
-
-/*==============================
-	Cadastro de disciplina
-==============================*/
 .cad-disciplina .checkbox_div {
     background: #777a7d3d;
     border-radius: 10px;

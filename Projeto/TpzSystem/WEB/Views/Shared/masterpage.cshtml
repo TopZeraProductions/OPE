@@ -1,176 +1,39 @@
 ﻿@using WEB.AppHelpers.HtmlHelpers
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>@ViewBag.title</title>
-    
-        <link rel="stylesheet" type="text/css" href="~/Assets/lib/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="~/Assets/lib/fontawesome-free-5/css/all.css" />
-        <link rel="stylesheet" type="text/css" href="~/Assets/css/site.css" />
-        <link rel="stylesheet" type="text/css" href="~/Assets/lib/jquery-toast-plugin/jquery.toast.min.css" />
-        
-        @RenderSection("Styles", required: false)
-    
-    </head>
-    <body>
-    <header>
-    
-        @Html.ContentLoad("box-cookie-consent",@Url.Action("PartialCookieConsent","Privacy", new { area = "Start" }))
-        
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" href="@Url.Action("Home", "Home", new {area = "Start"})">TpzSystem</a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="@Url.Action("Home", "Home", new { area = "Start" })">
-                                <i class="fas fa-home"></i>
-                                Home
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="@Url.Action("PrivacyDetails", "Privacy", new { area = "Start" })">Privacidade</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="@Url.Action("ListProducts", "ProductsConsult", new { area = "products" })">Products</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="@Url.Action("Logout", "Authentication", new { area = "Start" })">
-                                sair
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-    </header>
-        <div class="container">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
-        <footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2019 - TpzSystem - <a href="@Url.Action("Home", "Home", new {area = "Start"})">Privacy</a>
-            </div>
-        </footer>
-    </body>
-    
-    <script type="text/javascript" src="~/Assets/lib/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="~/Assets/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="~/Assets/lib/fontawesome-free-5/js/all.js"></script>
-    <script type="text/javascript" src="~/Assets/lib/gasparesganga-jquery-loading-overlay/loadingoverlay.js"></script>
-    <script type="text/javascript" src="~/Assets/lib/jquery-toast-plugin/jquery.toast.min.js"></script>
-
-    <script type="text/javascript" src="~/Assets/js/System.js" ></script>
-
-    @RenderSection("Scripts", required: false)
-</html>
-
-<!DOCTYPE html>
-<html>
-
 <head>
     <meta charset="utf-8">
-    <title>Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="~/Areas/Start/assets/css/cadastro.css">
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-</head>
-<body class="cad-aluno cad">
-<aside>
-    <div class="logo">
-        <h2>
-            <span>TPZ SYSTEM</span>
-            <span class="logo_mini">T</span>
-        </h2>
-    </div>
-    <div class="nav_ul">
-        <ul>
-            <li>
-                <a href="dashboard.html">
-                    <i class="fas fa-home"></i>
-                    <span>Inicio</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-plus icon-add"></i>
-                    <span>Cadastrar</span>
-                </a>
-                <ul class="submenu">
-                    <li>
-                        <a href="cad-aluno.html">Alunos</a>
-                    </li>
-                    <li>
-                        <a href="cad-professor.html">Professores</a>
-                    </li>
-                    <li>
-                        <a href="cad-disciplina.html">Disciplina</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-list-ul"></i>
-                    <span>Listar</span>
-                </a>
-                <ul class="submenu">
-                    <li>
-                        <a href="list_aluno.html">Alunos</a>
-                    </li>
-                    <li>
-                        <a href="#">Professores</a>
-                    </li>
-                    <li>
-                        <a href="#">Disciplinas</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#"><i class="fas fa-clipboard-list icon-lanc"></i>Lançamento de Notas</a></li>
-            <li><a href="#"><i class="fas fa-clipboard-check icon-check"></i>Fechamento de Notas</a></li>
-            <li><a href="#"><i class="fas fa-eraser icon-eraser"></i>Corrigir Atividades</a></li> -->
-        </ul>
-    </div>
-</aside>
+    <title>
+        @(ViewBag.Title == null ? "Tpz System" : ViewBag.Title)
+    </title>
 
-<header>
-    <div class="user">
-        <h4>Ramon C. <i class="fas fa-angle-down icon-arrow"></i></h4>
-        <div class="menu_user">
-            <ul>
-                <li>
-                    <a href="#"><i class="fas fa-cog"></i>Opções</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-sign-out-alt"></i>
-                        Sair
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <link rel="stylesheet" type="text/css" href="~/Areas/Start/assets/css/">
+    <link rel="stylesheet" type="text/css" href="~/Assets/css/System.css">
+    <link rel="stylesheet" type="text/css" href="~/Assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Assets/lib/fontawesome-free-5/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Assets/lib/jquery-toast-plugin/jquery.toast.min.css">
+    
+    @RenderSection("Styles", required: false)
+</head>
+
+<body class="row">
+
+@Html.ContentLoad("box-cookie-consent", Url.Action("PartialCookieConsent", "Privacy", new { area = "Start"}))
+
+<header id="topo-sistema" class="col-12">
+    @{ Html.RenderPartial("partial-topo-sistema"); }
 </header>
 
-<main class="content">
+<aside id="menu-lateral-sistema" class="col-3">
+    @{ Html.RenderPartial("partial-lateral-menu"); }
+</aside>
+
+<main id="conteudo-sistema" class="col-9">
     @RenderBody()
 </main>
 
 </body>
+
 <!--Setor de scripts do sistema-->
 <script type="text/javascript" src="~/Assets/lib/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="~/Assets/lib/bootstrap/js/bootstrap.min.js"></script>
@@ -181,4 +44,5 @@
 
 @RenderSection("Scripts", required: false)
 <!--fim Setor de scripts do sistema-->
+
 </html>
