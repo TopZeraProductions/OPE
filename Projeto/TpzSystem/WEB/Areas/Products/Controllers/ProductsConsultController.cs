@@ -1,7 +1,4 @@
-﻿using System;
-
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using WEB.AppInfra.Cookies.Service;
 using WEB.AppInfra.Security.Filters;
@@ -18,9 +15,9 @@ namespace WEB.Areas.Products.Controllers {
         private CookieServices CookiesServices;
         private IConfiguration Configuration;
         
-        private static SessionUser SessionUser;
-        private DataBaseSettings DataBaseSettings;
-        private ApiServicesSettings ApiServicesSettings;
+        private readonly SessionUser SessionUser;
+        private readonly DataBaseSettings DataBaseSettings;
+        private readonly ApiServicesSettings ApiServicesSettings;
 
         public ProductsConsultController(CookieServices  _ICookieServices, 
                                          SessionUser     _SessionUser, 
@@ -46,8 +43,8 @@ namespace WEB.Areas.Products.Controllers {
             SessionUser.id = 10;
             ViewBag.teste  = SessionUser.id;
             
-            SessionUser.name = "joao";
-            ViewBag.teste3 = SessionUser.name;
+            SessionUser.name      = "joao";
+            ViewBag.teste3        = SessionUser.name;
             SessionUser.nameCrypt = "joao";
             ViewBag.teste4        = SessionUser.nameCrypt;
 

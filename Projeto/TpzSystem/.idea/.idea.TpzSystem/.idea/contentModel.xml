@@ -9,6 +9,10 @@
           <e p="Example.cs" t="Include" />
         </e>
         <e p="HOMOLOG.csproj" t="IncludeRecursive" />
+        <e p="HttpServices" t="Include">
+          <e p="ContentTypeConst.cs" t="Include" />
+          <e p="Example.cs" t="Include" />
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -169,13 +173,11 @@
         </e>
         <e p="Assets" t="Include">
           <e p="css" t="Include">
-            <e p="System.css" t="Include" />
-            <e p="dashboard.css" t="Include" />
-            <e p="site.css" t="Include" />
+            <e p="system-style.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="js" t="Include">
-            <e p="System.js" t="Include" />
+            <e p="system.js" t="Include" />
           </e>
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">

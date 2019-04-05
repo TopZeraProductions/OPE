@@ -3,11 +3,11 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace UTIL.ftpServices {
+namespace HOMOLOG.FtpServices {
 
     public class WebRequestGetExample {
-        private static NetworkCredential NetworkCredential => 
-            new NetworkCredential("paulino.joaovitor@yahoo.com.br", "topzera1234");
+    
+        private static NetworkCredential NetworkCredential => new NetworkCredential("paulino.joaovitor@yahoo.com.br", "topzera1234");
 
         private static string server => "ftp://localhost";
         private static string folders(string folder)  => folder;

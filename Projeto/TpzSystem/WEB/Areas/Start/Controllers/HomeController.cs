@@ -32,13 +32,5 @@ namespace WEB.Areas.Start.Controllers {
             
             return View();
         }
-
-        public IActionResult ClientesListagem() {
-            return View();
-        }
-        
-        public IActionResult ClientesCadastro() {
-            return View();
-        }
     }
 }

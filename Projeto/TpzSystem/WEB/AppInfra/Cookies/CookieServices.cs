@@ -18,7 +18,7 @@ namespace WEB.AppInfra.Cookies.Service {
             if (isPersistent) {
                 CookieOptions options = new CookieOptions();
                 options.Expires = DateTime.Now.AddDays(5);
-
+                
                 HttpContext.Response.Cookies.Append(key, value, options);
             } else {
 

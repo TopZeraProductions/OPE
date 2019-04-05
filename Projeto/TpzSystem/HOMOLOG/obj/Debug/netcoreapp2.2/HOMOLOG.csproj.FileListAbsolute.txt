@@ -9,3 +9,14 @@
 /home/notim/GitHub/TopZera/OPE/TpzSystem/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.AssemblyInfo.cs
 /home/notim/GitHub/TopZera/OPE/TpzSystem/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.dll
 /home/notim/GitHub/TopZera/OPE/TpzSystem/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.pdb
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/bin/Debug/netcoreapp2.2/HOMOLOG.deps.json
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/bin/Debug/netcoreapp2.2/HOMOLOG.runtimeconfig.json
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/bin/Debug/netcoreapp2.2/HOMOLOG.runtimeconfig.dev.json
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/bin/Debug/netcoreapp2.2/HOMOLOG.dll
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/bin/Debug/netcoreapp2.2/HOMOLOG.pdb
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.csprojAssemblyReference.cache
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.csproj.CoreCompileInputs.cache
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.AssemblyInfoInputs.cache
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.AssemblyInfo.cs
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.dll
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.pdb

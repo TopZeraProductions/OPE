@@ -1,48 +1,48 @@
 ﻿@using WEB.AppHelpers.HtmlHelpers
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>
-        @(ViewBag.Title == null ? "Tpz System" : ViewBag.Title)
-    </title>
-
-    <link rel="stylesheet" type="text/css" href="~/Areas/Start/assets/css/">
-    <link rel="stylesheet" type="text/css" href="~/Assets/css/System.css">
-    <link rel="stylesheet" type="text/css" href="~/Assets/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="~/Assets/lib/fontawesome-free-5/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="~/Assets/lib/jquery-toast-plugin/jquery.toast.min.css">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            @(ViewBag.Title == null ? "Tpz System" : ViewBag.Title)
+        </title>
     
-    @RenderSection("Styles", required: false)
-</head>
-
-<body class="row">
-
-@Html.ContentLoad("box-cookie-consent", Url.Action("PartialCookieConsent", "Privacy", new { area = "Start"}))
-
-<header id="topo-sistema" class="col-12">
-    @{ Html.RenderPartial("partial-topo-sistema"); }
-</header>
-
-<aside id="menu-lateral-sistema" class="col-3">
-    @{ Html.RenderPartial("partial-lateral-menu"); }
-</aside>
-
-<main id="conteudo-sistema" class="col-9">
-    @RenderBody()
-</main>
-
-</body>
-
-<!--Setor de scripts do sistema-->
-<script type="text/javascript" src="~/Assets/lib/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="~/Assets/lib/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="~/Assets/lib/fontawesome-free-5/js/all.js"></script>
-<script type="text/javascript" src="~/Assets/lib/gasparesganga-jquery-loading-overlay/loadingoverlay.js"></script>
-<script type="text/javascript" src="~/Assets/lib/jquery-toast-plugin/jquery.toast.min.js"></script>
-<script type="text/javascript" src="~/Assets/js/System.js"></script>
-
-@RenderSection("Scripts", required: false)
-<!--fim Setor de scripts do sistema-->
+        <link rel="stylesheet" type="text/css" href="~/Areas/Start/assets/css/">
+        <link rel="stylesheet" type="text/css" href="~/Assets/css/system-style.css">
+        <link rel="stylesheet" type="text/css" href="~/Assets/lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="~/Assets/lib/fontawesome-free-5/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="~/Assets/lib/jquery-toast-plugin/jquery.toast.min.css">
+        
+        @RenderSection("Styles", required: false)
+    </head>
+    
+    <body>
+        <main id="main" class="row">
+            @Html.ContentLoad("box-cookie-consent", Url.Action("PartialCookieConsent", "Privacy", new { area = "Start" }))
+            
+            <header id="topo-sistema" class="col-12">
+                @{ Html.RenderPartial("partial-topo-sistema"); }
+            </header>
+            
+            <aside id="menu-lateral-sistema" class="col-3">
+                @{ Html.RenderPartial("partial-lateral-menu"); }
+            </aside>
+            
+            <article id="conteudo-sistema" class="col-9">
+                @RenderBody()
+            </article>
+        </main>
+    </body>
+        
+    <!--Setor de scripts do sistema-->
+    <script type="text/javascript" src="~/Assets/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Assets/lib/fontawesome-free-5/js/all.js"></script>
+    <script type="text/javascript" src="~/Assets/lib/gasparesganga-jquery-loading-overlay/loadingoverlay.js"></script>
+    <script type="text/javascript" src="~/Assets/lib/jquery-toast-plugin/jquery.toast.min.js"></script>
+    <script type="text/javascript" src="~/Assets/js/system.js"></script>
+    
+    @RenderSection("Scripts", required: false)
+    <!--fim Setor de scripts do sistema-->
 
 </html>

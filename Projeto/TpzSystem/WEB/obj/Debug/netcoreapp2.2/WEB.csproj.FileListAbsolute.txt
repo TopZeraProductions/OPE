@@ -101,7 +101,7 @@
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.csproj.CopyComplete
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.dll
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/WEB.pdb
-/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Home/ClientesListagem.g.cshtml.cs
-/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Home/ClientesCadastro.g.cshtml.cs
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Views/Shared/partial-lateral-menu.g.cshtml.cs
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Views/Shared/partial-topo-sistema.g.cshtml.cs
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Home/ClientesCadastro.g.cshtml.cs
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Start/Views/Home/ClientesListagem.g.cshtml.cs

@@ -38,6 +38,7 @@ namespace WEB.AppStart {
             services.AddScoped<LoggedAccess>();
             
             services.AddDistributedMemoryCache();
+            
             services.AddSession( // session configuration
                 options => {
                     options.Cookie.Name         = "tpz_session";

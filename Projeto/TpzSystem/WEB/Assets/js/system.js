@@ -1,7 +1,8 @@
-﻿let System = new function (log, jQuery) {
-    console.log(log);
+﻿var SystemJS = new function (log, jQuery) {
+    
 
     this.init = () => {
+        console.log(log);
         this.contentLoadHandler();
     };
     
@@ -46,6 +47,6 @@
         );
     }
     
-}("System.js was loaded !!", jQuery);
+}("system.js was loaded !!", jQuery);
 
-System.init();
+SystemJS.init();
