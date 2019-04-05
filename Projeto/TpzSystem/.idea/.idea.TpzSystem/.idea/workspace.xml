@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61fddc3f-baaa-4c11-aa37-279bf3361c49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WEB/Assets/css/system-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TpzSystem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TpzSystem/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TpzSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TpzSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HOMOLOG/FtpServices/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HOMOLOG/FtpServices/Example.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HOMOLOG/HOMOLOG.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HOMOLOG/HOMOLOG.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HOMOLOG/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HOMOLOG/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HOMOLOG/obj/Debug/netcoreapp2.2/HOMOLOG.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HOMOLOG/obj/HOMOLOG.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/HOMOLOG/obj/HOMOLOG.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HOMOLOG/obj/HOMOLOG.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/HOMOLOG/obj/HOMOLOG.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HOMOLOG/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/HOMOLOG/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTIL/obj/UTIL.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/UTIL.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTIL/obj/UTIL.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/UTIL.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UTIL/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UTIL/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/AppInfra/Cookies/CookieServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/AppInfra/Cookies/CookieServices.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/AppStart/Services.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/AppStart/Services.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Areas/Errors/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Areas/Errors/Models/ErrorViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Areas/Products/Controllers/ProductsConsultController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Areas/Products/Controllers/ProductsConsultController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Areas/Start/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Areas/Start/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Areas/Start/Views/Authentication/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Areas/Start/Views/Authentication/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Areas/Start/Views/Home/ClientesCadastro.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Areas/Start/Views/Home/ClientesListagem.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Areas/Start/Views/Home/Home.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Areas/Start/Views/Home/Home.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Assets/css/System.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Assets/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Assets/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Assets/js/System.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Assets/js/system.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Assets/lib/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Assets/lib/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Views/Shared/masterpage.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Views/Shared/masterpage.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Views/Shared/partial-lateral-menu.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Views/Shared/partial-lateral-menu.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/Views/Shared/partial-topo-sistema.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/Views/Shared/partial-topo-sistema.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/WEB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/WEB.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/obj/Debug/netcoreapp2.2/WEB.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/obj/Debug/netcoreapp2.2/WEB.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/obj/WEB.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/obj/WEB.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/obj/WEB.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/obj/WEB.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WEB/obj/project.assets.json" afterDir="false" />
-    </list>
+    <list default="true" id="61fddc3f-baaa-4c11-aa37-279bf3361c49" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +13,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HOMOLOG/HttpServices/ContentTypeConst.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="960">
               <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
               <folding>
                 <marker date="1554420938370" expanded="true" signature="46:3626" ph="{...}" />
@@ -62,20 +26,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HOMOLOG/HttpServices/Example.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="40" column="71" lean-forward="true" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+            <state relative-caret-position="176">
+              <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
               <folding>
-                <marker date="1554423605506" expanded="false" signature="6:185" ph="..." />
-                <marker date="1554423605506" expanded="true" signature="218:4059" ph="{...}" />
-                <marker date="1554423605506" expanded="true" signature="263:4056" ph="{...}" />
-                <marker date="1554423605506" expanded="true" signature="511:1055" ph="{...}" />
-                <marker date="1554423605506" expanded="true" signature="1113:2756" ph="{...}" />
-                <marker date="1554423605506" expanded="true" signature="1203:1274" ph="{...}" />
-                <marker date="1554423605506" expanded="true" signature="1354:2746" ph="{...}" />
-                <marker date="1554423605506" expanded="true" signature="1376:2552" ph="{...}" />
-                <marker date="1554423605506" expanded="true" signature="1798:2077" ph="/* request.DefaultRequestHeaders.Add(HttpRequestHeader.Cookie.ToString(),&quot;cookie1=value1; cookie2=value2&quot;); ... */" />
-                <marker date="1554423605506" expanded="true" signature="2584:2732" ph="{...}" />
-                <marker date="1554423605506" expanded="true" signature="2766:4050" ph="/* public static void get() { ... */" />
+                <marker date="1554423814693" expanded="false" signature="6:185" ph="..." />
+                <marker date="1554423814693" expanded="true" signature="218:4076" ph="{...}" />
+                <marker date="1554423814693" expanded="true" signature="263:4073" ph="{...}" />
+                <marker date="1554423814693" expanded="true" signature="511:1055" ph="{...}" />
+                <marker date="1554423814693" expanded="true" signature="1113:2773" ph="{...}" />
+                <marker date="1554423814693" expanded="true" signature="1203:1274" ph="{...}" />
+                <marker date="1554423814693" expanded="true" signature="1354:2763" ph="{...}" />
+                <marker date="1554423814693" expanded="true" signature="1376:2569" ph="{...}" />
+                <marker date="1554423814693" expanded="true" signature="1815:2094" ph="/* request.DefaultRequestHeaders.Add(HttpRequestHeader.Cookie.ToString(),&quot;cookie1=value1; cookie2=value2&quot;); ... */" />
+                <marker date="1554423814693" expanded="true" signature="2601:2749" ph="{...}" />
+                <marker date="1554423814693" expanded="true" signature="2783:4067" ph="/* public static void get() { ... */" />
               </folding>
             </state>
           </provider>
@@ -243,6 +207,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -277,8 +243,6 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,11 +344,12 @@
       <workItem from="1554327890912" duration="2967000" />
       <workItem from="1554391601700" duration="3179000" />
       <workItem from="1554414851000" duration="6692000" />
+      <workItem from="1554478310213" duration="263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154854000" />
+    <option name="totallyTimeSpent" value="155117000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,7 +363,7 @@
   <component name="ToolWindowManager">
     <frame x="21" y="55" width="1321" height="685" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.282011" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28672427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -416,7 +381,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="REST Client" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49803615" visible="true" weight="0.32078853" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.49803615" visible="true" weight="0.32078853" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50196385" side_tool="true" weight="0.27060932" />
       <window_info anchor="bottom" id="Build" order="15" weight="0.3297491" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1100,7 +1065,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HOMOLOG/HttpServices/ContentTypeConst.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="960">
           <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
           <folding>
             <marker date="1554420938370" expanded="true" signature="46:3626" ph="{...}" />
@@ -1111,20 +1076,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HOMOLOG/HttpServices/Example.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="40" column="71" lean-forward="true" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+        <state relative-caret-position="176">
+          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
           <folding>
-            <marker date="1554423605506" expanded="false" signature="6:185" ph="..." />
-            <marker date="1554423605506" expanded="true" signature="218:4059" ph="{...}" />
-            <marker date="1554423605506" expanded="true" signature="263:4056" ph="{...}" />
-            <marker date="1554423605506" expanded="true" signature="511:1055" ph="{...}" />
-            <marker date="1554423605506" expanded="true" signature="1113:2756" ph="{...}" />
-            <marker date="1554423605506" expanded="true" signature="1203:1274" ph="{...}" />
-            <marker date="1554423605506" expanded="true" signature="1354:2746" ph="{...}" />
-            <marker date="1554423605506" expanded="true" signature="1376:2552" ph="{...}" />
-            <marker date="1554423605506" expanded="true" signature="1798:2077" ph="/* request.DefaultRequestHeaders.Add(HttpRequestHeader.Cookie.ToString(),&quot;cookie1=value1; cookie2=value2&quot;); ... */" />
-            <marker date="1554423605506" expanded="true" signature="2584:2732" ph="{...}" />
-            <marker date="1554423605506" expanded="true" signature="2766:4050" ph="/* public static void get() { ... */" />
+            <marker date="1554423814693" expanded="false" signature="6:185" ph="..." />
+            <marker date="1554423814693" expanded="true" signature="218:4076" ph="{...}" />
+            <marker date="1554423814693" expanded="true" signature="263:4073" ph="{...}" />
+            <marker date="1554423814693" expanded="true" signature="511:1055" ph="{...}" />
+            <marker date="1554423814693" expanded="true" signature="1113:2773" ph="{...}" />
+            <marker date="1554423814693" expanded="true" signature="1203:1274" ph="{...}" />
+            <marker date="1554423814693" expanded="true" signature="1354:2763" ph="{...}" />
+            <marker date="1554423814693" expanded="true" signature="1376:2569" ph="{...}" />
+            <marker date="1554423814693" expanded="true" signature="1815:2094" ph="/* request.DefaultRequestHeaders.Add(HttpRequestHeader.Cookie.ToString(),&quot;cookie1=value1; cookie2=value2&quot;); ... */" />
+            <marker date="1554423814693" expanded="true" signature="2601:2749" ph="{...}" />
+            <marker date="1554423814693" expanded="true" signature="2783:4067" ph="/* public static void get() { ... */" />
           </folding>
         </state>
       </provider>
