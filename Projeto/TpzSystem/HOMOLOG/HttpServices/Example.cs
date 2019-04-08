@@ -1,10 +1,8 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
+
 using System.Threading.Tasks;
 
 namespace HOMOLOG.HttpServices {
@@ -40,16 +38,18 @@ namespace HOMOLOG.HttpServices {
                 try {
                     request.DefaultRequestHeaders.Add(HttpRequestHeader.Accept.ToString(), "*/*");
                     request.DefaultRequestHeaders.Add(HttpRequestHeader.ContentType.ToString(), ContentTypeConst.json);
-                    request.DefaultRequestHeaders. Add("Allow", "GET POST DELETE PUT");
                     request.DefaultRequestHeaders.Add(HttpRequestHeader.Connection.ToString(), "keep-alive");
-                    //request.DefaultRequestHeaders.Add(HttpRequestHeader.Cookie.ToString(),"cookie1=value1; cookie2=value2");
-                    //request.DefaultRequestHeaders.Add(HttpRequestHeader.Authorization.ToString(), "Basic 123456");
-
-                    // HttpRequestHeader.Authorization
-                        
+                    request.DefaultRequestHeaders.Add(HttpRequestHeader.Cookie.ToString(),"cookie1=value1; cookie2=value2");
+                    request.DefaultRequestHeaders.Add(HttpRequestHeader.Authorization.ToString(), "Basic 123456");
+                    
                     Console.WriteLine(request.DefaultRequestHeaders.ToString());
 
-                    HttpResponseMessage response = await request.GetAsync(uri);
+                    //HttpContent content = new HttpContent();
+                    
+                    HttpResponseMessage response = await request.PostAsync(uri, new StringContent("asd"));
+
+                    /* FormUrlEncodedContent ass = new FormUrlEncodedContent(as);*/
+                        
                     response.EnsureSuccessStatusCode();
 
                     Console.WriteLine("Response :" + response.ToString());
