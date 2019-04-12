@@ -45,11 +45,9 @@ namespace HOMOLOG.HttpServices {
                     Console.WriteLine(request.DefaultRequestHeaders.ToString());
 
                     //HttpContent content = new HttpContent();
-                    
+
                     HttpResponseMessage response = await request.PostAsync(uri, new StringContent("asd"));
 
-                    /* FormUrlEncodedContent ass = new FormUrlEncodedContent(as);*/
-                        
                     response.EnsureSuccessStatusCode();
 
                     Console.WriteLine("Response :" + response.ToString());

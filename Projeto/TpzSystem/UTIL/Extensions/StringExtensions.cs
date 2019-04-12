@@ -5,6 +5,7 @@ namespace System.Extensions {
             if (!string.IsNullOrEmpty(value)) {
                 return int.Parse(value);
             }
+
             return 0;
         }
 
@@ -13,10 +14,8 @@ namespace System.Extensions {
         }
 
         public static bool IsEmpty(this string value) {
-
             return string.IsNullOrEmpty(value);
         }
-
     }
 
 }

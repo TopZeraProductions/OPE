@@ -15,24 +15,18 @@ namespace UTIL.Crypt {
 
             byte[] valorHash = MD5provider.ComputeHash(Encoding.Default.GetBytes(text));
 
-            for (var i = 0; i < valorHash.Length; i++) {
-                str.Append(valorHash[i].ToString("x2"));
+            foreach (var t in valorHash) {
+                str.Append(t.ToString("x2"));
             }
 
             return str.ToString();
         }
 
         public static bool Verify(string text, string Hashin) {
-
             string         Hash     = Generate(text);
             StringComparer Comparer = StringComparer.OrdinalIgnoreCase;
 
-            if (Comparer.Compare(Hash, Hashin).Equals(0)) {
-                
-                return true;
-            }
-
-            return false;
+            return Comparer.Compare(Hash, Hashin).Equals(0);
         }
     }
 

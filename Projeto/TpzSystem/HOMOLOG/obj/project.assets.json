@@ -5251,7 +5251,7 @@
       "outputPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/HOMOLOG/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/notim/.nuget/NuGet/NuGet.Config"
+        "/home/notim/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
