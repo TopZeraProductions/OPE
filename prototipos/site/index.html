@@ -127,7 +127,109 @@
             </aside>
             
             <article id="conteudo-sistema" class="col-9">
-                <button class="btn btn-primary">Teste</button>
+                <!-- Botão para acionar modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                    Itens do Pedido
+                </button>
+
+                <!-- Modal Pedidos -->
+                <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="#exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Adicionar itens ao Pedido</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class = "row">
+                            <div class = "col-md-4">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Digite o produto" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-md-2">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                       <button class="btn btn-outline-secondary" type="button">Qtd</button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class = "col-md-2">
+                                    <button class="btn btn-primary" type="submit">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class= "col-md-4">
+                            <img src="Assets/imagens/pizza mussarela.jpg" alt="pizza mussarela"  style="width:70%; margin: 0 auto;" />
+                        </div>
+                        <div class = "col-md-8">
+                            <p>Recheio: Molho de tomate,Mussarela,Rodelas de tomates,óregano</p>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar Pedido</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+                 <!-- Botão para acionar modal Cliente-->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalcadastrocliente">
+                    Cadastro Cliente
+                </button>
+    
+                <!-- Modal -->
+                <div class="modal fade" id="modalcadastrocliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog  modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Adicionar Cliente</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Nome do Cliente" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Endereço" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                            
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Telefone" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Salvar Dados</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </main>
     </body>
