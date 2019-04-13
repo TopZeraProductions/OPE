@@ -6,7 +6,6 @@ namespace WEB.AppStart {
     public partial class Startup {
         // metodo de Configuracao de rotas 
         private void ConfigureRoute(IRouteBuilder route) {
-            
             route.MapAreaRoute(
                 "default_area", 
                 "area",
@@ -21,6 +20,7 @@ namespace WEB.AppStart {
             ConfigureProductRoute(route);
             ConfigureStartRoute(route);
             ConfigureErrorsRoute(route);
+            ConfigureOrderRoute(route);
         }
     }
 }

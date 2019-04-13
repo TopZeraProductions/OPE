@@ -21,11 +21,17 @@
       <_ContentIncludedByDefault Remove="Areas\Home\Views\HomeConsult\ListProducts.cshtml" />
       <_ContentIncludedByDefault Remove="Areas\Home\Views\ProductsConsult\Home.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Orders\Views\OrderConsult\ShowOrder.cshtml" />
     </ItemGroup>
 
 
     <ItemGroup>
       <ProjectReference Include="..\UTIL\UTIL.csproj" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <Folder Include="Areas\Orders\Views" />
     </ItemGroup>
 
 </Project>

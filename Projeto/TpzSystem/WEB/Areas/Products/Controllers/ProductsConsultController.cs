@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+
 using WEB.AppInfra.Cookies.Service;
 using WEB.AppInfra.Security.Filters;
 using WEB.AppInfra.Security.SessionUserConfiguration;
@@ -14,35 +15,35 @@ namespace WEB.Areas.Products.Controllers {
     public class ProductsConsultController : RestrictController {
         private CookieServices CookiesServices;
         private IConfiguration Configuration;
-        
-        private readonly SessionUser SessionUser;
-        private readonly DataBaseSettings DataBaseSettings;
+
+        private readonly SessionUser         SessionUser;
+        private readonly DataBaseSettings    DataBaseSettings;
         private readonly ApiServicesSettings ApiServicesSettings;
 
-        public ProductsConsultController(CookieServices  _ICookieServices, 
-                                         SessionUser     _SessionUser, 
-                                         IConfiguration  _IConfiguration) {
-            
+        public ProductsConsultController(CookieServices _ICookieServices,
+                                         SessionUser    _SessionUser,
+                                         IConfiguration _IConfiguration) {
+
             CookiesServices = _ICookieServices;
             SessionUser     = _SessionUser;
             Configuration   = _IConfiguration;
-            
+
             DataBaseSettings    = Configuration.GetSectionMapped<DataBaseSettings>();
             ApiServicesSettings = Configuration.GetSectionMapped<ApiServicesSettings>();
         }
-        
+
         public IActionResult Index() {
             return RedirectToAction("ListProducts");
         }
-        
-        [HttpGet, ServiceFilter(typeof(LoggedAccess))]
+
+        [HttpGet, ServiceFilter(typeof (LoggedAccess))]
         public IActionResult ListProducts() {
 
             ListProductsVM ViewModel = new ListProductsVM();
-                
+
             SessionUser.id = 10;
             ViewBag.teste  = SessionUser.id;
-            
+
             SessionUser.name      = "joao";
             ViewBag.teste3        = SessionUser.name;
             SessionUser.nameCrypt = "joao";
