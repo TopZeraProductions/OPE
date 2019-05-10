@@ -9,13 +9,19 @@
         </div>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body sub-item">
-                <a href="" class="sub-item">Fornecedores</a>
+                <a href="" class="sub-item">
+                    Fornecedores
+                </a>
             </div>
             <div class="card-body sub-item ">
-                <a href="" class="sub-item">Produtos</a>
+                <a href="" class="sub-item">
+                    Produtos
+                </a>
             </div>
             <div class="card-body sub-item ">
-                <a href="" class="sub-item">Clientes</a>
+                <a href="" class="sub-item">
+                    Clientes
+                </a>
             </div>
         </div>
     </div>
@@ -24,13 +30,13 @@
         <div class="card-header" id="headingTwo">
             <h5 class="mb-0">
                 <a class="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <a href="">Pedidos</a>
+                    Pedidos
                 </a>
             </h5>
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body sub-item">
-                <a href="" class="sub-item">Efetuar Novo Pedido</a>
+                <a href="@Url.Action("ShowOrder", "OrderConsult", new { area = "Orders" })" class="sub-item">Efetuar Novo Pedido</a>
             </div>
             <div class="card-body sub-item ">
                 <a href="" class="sub-item">Historico</a>
@@ -48,7 +54,7 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
             <div class="card-body sub-item">
-                <a href="" class="sub-item">Efetuar Novo Pedido</a>
+                <a href="" class="sub-item">Acompanhar entregas</a>
             </div>
             <div class="card-body sub-item ">
                 <a href="" class="sub-item">Historico</a>
@@ -56,6 +62,7 @@
         </div>
     </div>
     
+    @*
     <div class="card item-menu">
         <div class="card-header" id="headingThree">
             <h5 class="mb-0">
@@ -70,5 +77,6 @@
             </div>
         </div>
     </div>
+    *@
     
 </div>

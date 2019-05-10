@@ -192,6 +192,11 @@
             <e p="system-style.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
+          <e p="images" t="Include">
+            <e p="coca.jpg" t="Include" />
+            <e p="pizza calabresa.jpg" t="Include" />
+            <e p="pizza mussarela.jpg" t="Include" />
+          </e>
           <e p="js" t="Include">
             <e p="system.js" t="Include" />
           </e>
