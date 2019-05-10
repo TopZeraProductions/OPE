@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_TpzSystem.-1729103237.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_TpzSystem.-1729103237.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="HOMOLOG" t="IncludeRecursive">
         <e p="FtpServices" t="Include">
@@ -1866,13 +1866,11 @@
               <e p="jquery.toast.min.css" t="Include" />
               <e p="jquery.toast.min.js" t="Include" />
             </e>
-            <e p="node_modules" t="ExcludeRecursive">
-              <e p="bootstrap" t="IncludeRecursive" />
-              <e p="font-awesome" t="IncludeRecursive" />
-              <e p="gasparesganga-jquery-loading-overlay" t="IncludeRecursive" />
-              <e p="jquery" t="IncludeRecursive" />
-              <e p="jquery-toast-plugin" t="IncludeRecursive" />
-            </e>
+            <e p="node_modules/bootstrap" t="IncludeRecursive" />
+            <e p="node_modules/font-awesome" t="IncludeRecursive" />
+            <e p="node_modules/gasparesganga-jquery-loading-overlay" t="IncludeRecursive" />
+            <e p="node_modules/jquery" t="IncludeRecursive" />
+            <e p="node_modules/jquery-toast-plugin" t="IncludeRecursive" />
             <e p="package-lock.json" t="Include" />
             <e p="package.json" t="Include" />
           </e>
