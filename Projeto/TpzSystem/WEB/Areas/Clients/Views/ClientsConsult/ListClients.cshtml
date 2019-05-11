@@ -1,0 +1,69 @@
+@{
+    ViewBag.Title = "title";
+    Layout = "masterpage";
+}
+
+<article id="dados-clientes">
+    <div class="row">
+        <div class="col-12">
+            <h4>Dados do Cliente</h4>
+        </div>
+        <div class="col-8">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Digite o telefone/nome do cliente" aria-label="Digite o telefone/nome do cliente" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modalcadastrocliente">
+                <i class="fa fa-plus"></i>
+                Cadastro Cliente
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>Nome:</label>
+            <strong>joao vitor paulino martins</strong>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label>Email:</label>
+            <strong>paulino.joaovitor@yahoo.com.br</strong>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label>Telefone:</label>
+            <strong>(11)95337-7823</strong>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label>Endereço:</label>
+            <strong>Aricanga n°1340, Itaim paulista, SP</strong>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label>Cep:</label>
+            <strong>08160-000</strong>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-7">
+        </div>
+        <div class="form-group col-md-3">
+            <button class="btn btn-dark">
+                Atualizar dados
+            </button>
+        </div>
+        <div class="form-group col-md-2">
+            <button class="btn btn-info">
+                Prosseguir
+            </button>
+        </div>
+    </div>
+</article>

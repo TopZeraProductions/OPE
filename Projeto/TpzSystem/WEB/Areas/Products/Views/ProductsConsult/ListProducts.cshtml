@@ -1,34 +1,84 @@
-@model WEB.Areas.Products.Models.ViewModels.ListProductsVM
-
 @{
     ViewBag.Title = "Products";
     Layout = "masterpage";
 }
 
-@section styles{
-    <link rel="stylesheet" href="~/Areas/Products/Assets/css/products.css" />
-}
+<article id="dados-clientes">
+    <div class="row">
+        <div class="col-12">
+            <h4>Produtos cadastrados no sistema</h4>
+        </div>
+        <div class="col-2"></div>
+        
+        <div class="col-8">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Digite para pesquisar" aria-label="Digite para pesquisar" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-2">
+            <button class="btn btn-primary" type="submit">
+                <i class="fa fa-plus"></i>
+                Novo
+            </button>
+        </div>
+    </div>
+</article>
 
-<h2>@ViewBag.teste</h2>
-<h2>@ViewBag.teste2</h2>
-<h2>@ViewBag.teste3</h2>
-<h2>@ViewBag.teste4</h2>
+<div class="row" style="padding: 10px; margin: 10px; border: 1px solid #2f4f4f">
+    <div class="col-md-2">
+        <img src="~/Assets/images/pizza calabresa.jpg" alt="pizza mussarela" style="width: 100%; margin: 0 auto;"/>
+    </div>
+    <div class="col-md-8">
+        <p>
+            <strong>Pizza grande Calabresa </strong>
+        </p>
+        <p>Recheio: Molho de tomate,calabresa, Mussarela,Rodelas de tomates,óregano</p>
+        <p>
+            <strong>Preço unitario: R$30,00 </strong>
+        </p>
+    </div>
+    <div class="col-md-2">
+        <a href="#" style="color: #1b1e21">
+            <i class="fas fa-edit"></i>
+            Editar
+        </a>
+        <br />
+        <a href="#" style="color: #1b1e21">
+            <i class="fas fa-trash"></i>
+            Excluir
+        </a>
+    </div>
+</div>
 
-@foreach (var Item  in Model.ApiServicesSettings.listServices) {
-    
-    <h3>@Item.name</h3>
-    <h3>@Item.path</h3>
-}
 
-@foreach (var Item in Model.DataBaseSettings.listDatabases) {
-    
-    <h3>@Item.host</h3>
-    <h3>@Item.user</h3>
-    <h3>@Item.database</h3>
-    <h3>@Item.password</h3>
-    <h3>@Item.provider</h3>
-}
-
-<a href="@Url.Action("Error", "Error", new { area ="Errors" })">Teste</a>
-
-<div class="teste"></div>
+<div class="row" style="padding: 10px; margin: 10px; border: 1px solid #2f4f4f">
+    <div class="col-md-2">
+        <img src="~/Assets/images/pizza calabresa.jpg" alt="pizza mussarela" style="width: 100%; margin: 0 auto;"/>
+    </div>
+    <div class="col-md-8">
+        <p>
+            <strong>Pizza grande Calabresa </strong>
+        </p>
+        <p>Recheio: Molho de tomate,calabresa, Mussarela,Rodelas de tomates,óregano</p>
+        <p>
+            <strong>Preço unitario: R$30,00 </strong>
+        </p>
+    </div>
+    <div class="col-md-2">
+        <a href="#" style="color: #1b1e21">
+            <i class="fas fa-edit"></i>
+            Editar
+        </a>
+        <br />
+        <a href="#" style="color: #1b1e21">
+            <i class="fas fa-trash"></i>
+            Excluir
+        </a>
+    </div>
+</div>

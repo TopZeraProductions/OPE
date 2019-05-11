@@ -93,6 +93,27 @@
           <e p="Services.cs" t="Include" />
         </e>
         <e p="Areas" t="Include">
+          <e p="Clients" t="Include">
+            <e p="Assets" t="Include">
+              <e p="css" t="Include">
+                <e p="products.css" t="Include" />
+              </e>
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="ClientsConsultController.cs" t="Include" />
+            </e>
+            <e p="Models" t="Include">
+              <e p="ViewModels" t="Include">
+                <e p="ListProductsVM.cs" t="Include" />
+              </e>
+            </e>
+            <e p="RouteConfig.cs" t="Include" />
+            <e p="Views" t="Include">
+              <e p="ClientsConsult" t="Include">
+                <e p="ListClients.cshtml" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Errors" t="Include">
             <e p="Controllers" t="Include">
               <e p="ErrorsController.cs" t="Include" />
@@ -176,8 +197,6 @@
                 <e p="Login.cshtml" t="Include" />
               </e>
               <e p="Home" t="Include">
-                <e p="ClientesCadastro.cshtml" t="Include" />
-                <e p="ClientesListagem.cshtml" t="Include" />
                 <e p="Home.cshtml" t="Include" />
               </e>
               <e p="Privacy" t="Include">

@@ -6,13 +6,12 @@ using WEB.AppInfra.Security.Filters;
 using WEB.AppInfra.Security.SessionUserConfiguration;
 using WEB.AppStart.AppSettingsMappers.Extensions;
 using WEB.AppStart.AppSettingsMappers.Unities;
-using WEB.Areas.Products.Models.ViewModels;
 using WEB.Controllers;
 
-namespace WEB.Areas.Products.Controllers {
+namespace WEB.Areas.Clients.Controllers {
 
-    [Area("Products")]
-    public class ProductsConsultController : RestrictController {
+    [Area("Clients")]
+    public class ClientsConsultController : RestrictController {
         private CookieServices CookiesServices;
         private IConfiguration Configuration;
 
@@ -20,7 +19,7 @@ namespace WEB.Areas.Products.Controllers {
         private readonly DataBaseSettings    DataBaseSettings;
         private readonly ApiServicesSettings ApiServicesSettings;
 
-        public ProductsConsultController(CookieServices _ICookieServices,
+        public ClientsConsultController(CookieServices _ICookieServices,
                                          SessionUser    _SessionUser,
                                          IConfiguration _IConfiguration) {
 
@@ -33,11 +32,11 @@ namespace WEB.Areas.Products.Controllers {
         }
 
         public IActionResult Index() {
-            return RedirectToAction("ListProducts");
+            return RedirectToAction("ListClients");
         }
 
         [HttpGet, ServiceFilter(typeof (LoggedAccess))]
-        public IActionResult ListProducts() {
+        public IActionResult ListClients() {
 
             return View();
         }
