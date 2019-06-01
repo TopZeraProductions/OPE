@@ -105,3 +105,4 @@
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Products/Views/ProductsConsult/ListProducts.g.cshtml.cs
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Orders/Views/OrderConsult/ShowOrder.g.cshtml.cs
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Clients/Views/ClientsConsult/ListClients.g.cshtml.cs
+/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Providers/Views/ProvidersConsult/ListProviders.g.cshtml.cs

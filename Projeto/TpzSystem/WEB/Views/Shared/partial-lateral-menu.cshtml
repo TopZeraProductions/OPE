@@ -9,17 +9,17 @@
         </div>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body sub-item">
-                <a href="" class="sub-item">
+                <a href="@Url.Action("ListProviders", "ProvidersConsult", new { area="Providers" })" class="sub-item">
                     Fornecedores
                 </a>
             </div>
             <div class="card-body sub-item ">
-                <a href="@Url.Action("ListProducts", "ProductsConsult", new {area = "Products" } )" class="sub-item">
+                <a href="@Url.Action("ListProducts", "ProductsConsult", new { area = "Products" } )" class="sub-item">
                     Produtos
                 </a>
             </div>
             <div class="card-body sub-item ">
-                <a href="" class="sub-item">
+                <a href="@Url.Action("Index", "ClientsConsult", new { area = "Clients" } )" class="sub-item">
                     Clientes
                 </a>
             </div>

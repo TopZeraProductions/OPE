@@ -21,6 +21,8 @@ namespace WEB.AppStart {
             ConfigureStartRoute(route);
             ConfigureErrorsRoute(route);
             ConfigureOrderRoute(route);
+            ConfigureProvidersRoute(route);
+            ConfigureClientsRoute(route);
         }
     }
 }

@@ -3,13 +3,62 @@
     Layout = "masterpage";
 }
 
+<div class="modal fade" id="modalcadastrocliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adicionar Produto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label>Nome do Produto</label>
+                        <input type="text" class="form-control" placeholder="Nome do produto" aria-label="" aria-describedby="basic-addon2">
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <label>Preço unitario do Produto</label>
+                        <input type="text" class="form-control" placeholder="Preço uitario" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    </div>
+                    
+                    <div class="form-group col-md-12">
+                        <label>Descriçao</label>
+                        <textarea style="width: 100%; height: 100px;"></textarea>
+                    </div>
+                    
+                    <div class="form-group col-md-12">
+                        <label>Fornecedor</label>
+                        <select class="form-control">
+                            <option>PMG</option>
+                            <option>Unilever</option>
+                            <option>Davo Supermercados</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <div class="form-group">
+                           <label for="exampleFormControlFile1">Foto para Upload</label>
+                           <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar Dados</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <article id="dados-clientes">
     <div class="row">
         <div class="col-12">
             <h4>Produtos cadastrados no sistema</h4>
         </div>
-        <div class="col-2"></div>
-        
         <div class="col-8">
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Digite para pesquisar" aria-label="Digite para pesquisar" aria-describedby="basic-addon2">
@@ -20,11 +69,10 @@
                 </div>
             </div>
         </div>
-        
-        <div class="col-md-2">
-            <button class="btn btn-primary" type="submit">
+        <div class="col-4">
+            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modalcadastrocliente">
                 <i class="fa fa-plus"></i>
-                Novo
+                Novo Produto
             </button>
         </div>
     </div>
@@ -32,15 +80,15 @@
 
 <div class="row" style="padding: 10px; margin: 10px; border: 1px solid #2f4f4f">
     <div class="col-md-2">
-        <img src="~/Assets/images/pizza calabresa.jpg" alt="pizza mussarela" style="width: 100%; margin: 0 auto;"/>
+        <img src="~/Assets/images/coca.jpg" alt="Coca cola 2l" style="width: 100%; margin: 0 auto;"/>
     </div>
     <div class="col-md-8">
         <p>
-            <strong>Pizza grande Calabresa </strong>
+            <strong>Coca-Cola 2l</strong>
         </p>
-        <p>Recheio: Molho de tomate,calabresa, Mussarela,Rodelas de tomates,óregano</p>
+        <p>Coca cola de 2 litros</p>
         <p>
-            <strong>Preço unitario: R$30,00 </strong>
+            <strong>Preço unitario: R$10,00 </strong>
         </p>
     </div>
     <div class="col-md-2">
@@ -48,7 +96,7 @@
             <i class="fas fa-edit"></i>
             Editar
         </a>
-        <br />
+        <br/>
         <a href="#" style="color: #1b1e21">
             <i class="fas fa-trash"></i>
             Excluir
@@ -59,7 +107,7 @@
 
 <div class="row" style="padding: 10px; margin: 10px; border: 1px solid #2f4f4f">
     <div class="col-md-2">
-        <img src="~/Assets/images/pizza calabresa.jpg" alt="pizza mussarela" style="width: 100%; margin: 0 auto;"/>
+        <img src="~/Assets/images/pizza calabresa.jpg" alt="pizza Calabresa" style="width: 100%; margin: 0 auto;"/>
     </div>
     <div class="col-md-8">
         <p>
@@ -75,7 +123,60 @@
             <i class="fas fa-edit"></i>
             Editar
         </a>
-        <br />
+        <br/>
+        <a href="#" style="color: #1b1e21">
+            <i class="fas fa-trash"></i>
+            Excluir
+        </a>
+    </div>
+</div>
+
+
+<div class="row" style="padding: 10px; margin: 10px; border: 1px solid #2f4f4f">
+    <div class="col-md-2">
+        <img src="~/Assets/images/pizza mussarela.jpg" alt="pizza mussarela" style="width: 100%; margin: 0 auto;"/>
+    </div>
+    <div class="col-md-8">
+        <p>
+            <strong>Pizza grande de Mussarela</strong>
+        </p>
+        <p>Recheio: Molho de tomate, Mussarela, Rodelas de tomates, óregano</p>
+        <p>
+            <strong>Preço unitario: R$23,90 </strong>
+        </p>
+    </div>
+    <div class="col-md-2">
+        <a href="#" style="color: #1b1e21">
+            <i class="fas fa-edit"></i>
+            Editar
+        </a>
+        <br/>
+        <a href="#" style="color: #1b1e21">
+            <i class="fas fa-trash"></i>
+            Excluir
+        </a>
+    </div>
+</div>
+
+<div class="row" style="padding: 10px; margin: 10px; border: 1px solid #2f4f4f">
+    <div class="col-md-2">
+        <img src="~/Assets/images/pizza frango.jpg" alt="pizza Frango" style="width: 100%; margin: 0 auto;"/>
+    </div>
+    <div class="col-md-8">
+        <p>
+            <strong>Pizza grande de Frango</strong>
+        </p>
+        <p>Recheio: Molho de tomate, Frango, catupiru Rodelas de tomates, óregano</p>
+        <p>
+            <strong>Preço unitario: R$23,90 </strong>
+        </p>
+    </div>
+    <div class="col-md-2">
+        <a href="#" style="color: #1b1e21">
+            <i class="fas fa-edit"></i>
+            Editar
+        </a>
+        <br/>
         <a href="#" style="color: #1b1e21">
             <i class="fas fa-trash"></i>
             Excluir

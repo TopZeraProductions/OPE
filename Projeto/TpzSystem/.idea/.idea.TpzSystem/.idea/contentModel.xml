@@ -166,6 +166,22 @@
               </e>
             </e>
           </e>
+          <e p="Providers" t="Include">
+            <e p="Assets" t="Include">
+              <e p="css" t="Include">
+                <e p="products.css" t="Include" />
+              </e>
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="ProvidersConsultController.cs" t="Include" />
+            </e>
+            <e p="RouteConfig.cs" t="Include" />
+            <e p="Views" t="Include">
+              <e p="ProvidersConsult" t="Include">
+                <e p="ListProviders.cshtml" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Start" t="Include">
             <e p="Assets" t="Include">
               <e p="css" t="Include">
@@ -214,6 +230,7 @@
           <e p="images" t="Include">
             <e p="coca.jpg" t="Include" />
             <e p="pizza calabresa.jpg" t="Include" />
+            <e p="pizza frango.jpg" t="Include" />
             <e p="pizza mussarela.jpg" t="Include" />
           </e>
           <e p="js" t="Include">

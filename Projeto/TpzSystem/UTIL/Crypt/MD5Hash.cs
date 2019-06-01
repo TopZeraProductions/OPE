@@ -5,7 +5,7 @@ using System.Text;
 namespace UTIL.Crypt {
 
     public static class MD5Hash {
-        public static string salt => "&!Tp25y573m2019#%";
+        private static string salt => "&!Tp25y573m2019#%";
         
         public static string Generate(string text) {
             MD5CryptoServiceProvider MD5provider = new MD5CryptoServiceProvider();
