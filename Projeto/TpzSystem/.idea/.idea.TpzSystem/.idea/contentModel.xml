@@ -1,24 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.Rider2019.1/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_TpzSystem.-1729103237.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_TpzSystem.-1729103237.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
-      <e p="HOMOLOG" t="IncludeRecursive">
-        <e p="FtpServices" t="Include">
-          <e p="Example.cs" t="Include" />
-        </e>
-        <e p="HOMOLOG.csproj" t="IncludeRecursive" />
-        <e p="HttpServices" t="Include">
-          <e p="ContentTypeConst.cs" t="Include" />
-          <e p="Example.cs" t="Include" />
-        </e>
-        <e p="Program.cs" t="Include" />
+      <e p="BLL" t="IncludeRecursive">
+        <e p="BLL.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
-              <e p="HOMOLOG.AssemblyInfo.cs" t="Include" />
+              <e p="BLL.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="DAL" t="IncludeRecursive">
+        <e p="DAL.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="DAL.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="DTO" t="IncludeRecursive">
+        <e p="Coordenadores" t="Include">
+          <e p="Builders" t="Include">
+            <e p="CoordenadorModelBuilder.cs" t="Include" />
+          </e>
+          <e p="Entities" t="Include">
+            <e p="Coordenador.cs" t="Include" />
+          </e>
+          <e p="Repository" t="Include">
+            <e p="DataContext.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Core" t="Include">
+          <e p="Connections.cs" t="Include" />
+          <e p="EntitiesCore.cs" t="Include" />
+          <e p="Extensions" t="Include">
+            <e p="DataContextExtensions.cs" t="Include" />
+          </e>
+          <e p="ModelCreating.cs" t="Include" />
+          <e p="ToMigrateSqlServer.cs" t="Include" />
+          <e p="sharedKernel" t="Include">
+            <e p="DefaultContext.cs" t="Include" />
+            <e p="DefaultEntity.cs" t="Include" />
+          </e>
+        </e>
+        <e p="DTO.csproj" t="IncludeRecursive" />
+        <e p="Produtos" t="Include">
+          <e p="Builder" t="Include">
+            <e p="ProdutoModelBuilder.cs" t="Include" />
+          </e>
+          <e p="Entities" t="Include">
+            <e p="Produto.cs" t="Include" />
+          </e>
+          <e p="Repository" t="Include">
+            <e p="DataContext.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="DTO.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
