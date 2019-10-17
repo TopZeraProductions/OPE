@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/DTO/DTO.csproj": {}
+    "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/DTO.csproj": {}
   },
   "projects": {
-    "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/DTO/DTO.csproj": {
+    "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/DTO/DTO.csproj",
+        "projectUniqueName": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/DTO/DTO.csproj",
+        "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/DTO.csproj",
         "packagesPath": "/home/notim/.nuget/packages/",
-        "outputPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/DTO/obj/",
+        "outputPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "/home/notim/.config/NuGet/NuGet.Config"
         ],
@@ -52,7 +55,12 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true

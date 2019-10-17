@@ -1,11 +1,14 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/WEB.csproj",
+    "projectUniqueName": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/WEB.csproj",
     "projectName": "WEB",
-    "projectPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/WEB.csproj",
-    "outputPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/WEB/obj/",
+    "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/WEB.csproj",
+    "outputPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"
     ],
@@ -15,8 +18,8 @@
     "frameworks": {
       "netcoreapp2.2": {
         "projectReferences": {
-          "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj": {
-            "projectPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj"
+          "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj": {
+            "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj"
           }
         }
       }
@@ -33,7 +36,7 @@
         "Microsoft.AspNetCore.App": {
           "suppressParent": "All",
           "target": "Package",
-          "version": "[2.2.6, )",
+          "version": "[2.2.0, )",
           "autoReferenced": true
         },
         "Microsoft.AspNetCore.Razor.Design": {
@@ -53,7 +56,12 @@
         }
       },
       "imports": [
-        "net461"
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
       ],
       "assetTargetFallback": true,
       "warn": true

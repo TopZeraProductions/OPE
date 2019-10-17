@@ -163,6 +163,22 @@
               </e>
             </e>
           </e>
+          <e p="Dashboard" t="Include">
+            <e p="Assets" t="Include">
+              <e p="css" t="Include">
+                <e p="products.css" t="Include" />
+              </e>
+            </e>
+            <e p="Controllers" t="Include">
+              <e p="DashboardConsultController.cs" t="Include" />
+            </e>
+            <e p="RouteConfig.cs" t="Include" />
+            <e p="Views" t="Include">
+              <e p="DashboardConsult" t="Include">
+                <e p="index.cshtml" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Errors" t="Include">
             <e p="Controllers" t="Include">
               <e p="ErrorsController.cs" t="Include" />

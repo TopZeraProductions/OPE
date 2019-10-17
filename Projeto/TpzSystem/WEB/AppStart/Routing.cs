@@ -23,6 +23,7 @@ namespace WEB.AppStart {
             ConfigureOrderRoute(route);
             ConfigureProvidersRoute(route);
             ConfigureClientsRoute(route);
+            ConfigureDashboardRoute(route);
         }
     }
 }

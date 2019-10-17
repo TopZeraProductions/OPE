@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/BLL/BLL.csproj": {}
+    "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/BLL.csproj": {}
   },
   "projects": {
-    "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/BLL/BLL.csproj": {
+    "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/BLL/BLL.csproj",
+        "projectUniqueName": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/BLL/BLL.csproj",
+        "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/BLL.csproj",
         "packagesPath": "/home/notim/.nuget/packages/",
-        "outputPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/BLL/obj/",
+        "outputPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "/home/notim/.config/NuGet/NuGet.Config"
         ],
@@ -44,7 +47,12 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true

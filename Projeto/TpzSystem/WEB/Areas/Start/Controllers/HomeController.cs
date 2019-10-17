@@ -25,12 +25,12 @@ namespace WEB.Areas.Start.Controllers {
         }
         
         public IActionResult Index() {
-            return RedirectToAction("Home");
+            return RedirectToAction("index", "DashBoardConsult", new {area = "Dashboard"});
         }
 
         public IActionResult Home() {
             
-            return View();
+            return RedirectToAction("index", "DashBoardConsult", new {area = "Dashboard"});
         }
     }
 }

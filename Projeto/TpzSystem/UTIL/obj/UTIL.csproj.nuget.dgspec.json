@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj": {}
+    "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj": {}
   },
   "projects": {
-    "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj": {
+    "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj",
+        "projectUniqueName": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj",
         "projectName": "UTIL",
-        "projectPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj",
+        "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj",
         "packagesPath": "/home/notim/.nuget/packages/",
-        "outputPath": "/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/",
+        "outputPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/notim/.config/NuGet/NuGet.Config"
+          "/home/notim/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -44,10 +47,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

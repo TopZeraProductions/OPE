@@ -20,7 +20,6 @@
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/bin/Debug/netcoreapp2.2/UTIL.dll
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/bin/Debug/netcoreapp2.2/UTIL.pdb
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/Debug/netcoreapp2.2/UTIL.csprojAssemblyReference.cache
-/home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/Debug/netcoreapp2.2/UTIL.csproj.CoreCompileInputs.cache
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/Debug/netcoreapp2.2/UTIL.AssemblyInfoInputs.cache
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/Debug/netcoreapp2.2/UTIL.AssemblyInfo.cs
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/Debug/netcoreapp2.2/UTIL.dll
