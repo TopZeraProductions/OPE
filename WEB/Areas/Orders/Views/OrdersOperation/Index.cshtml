@@ -1,4 +1,4 @@
-@model WEB.Areas.Orders.Models.Forms.RegisterOrderForm
+﻿@model WEB.Areas.Orders.Models.Forms.RegisterOrderForm
 
 @{ Layout = "masterpage"; }
 
@@ -193,31 +193,33 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row" style="padding: 10px; margin: 10px; border: 1px solid #2f4f4f">
-                        <div class="col-md-2">
-                            <img src="~/Assets/images/pizza calabresa.jpg" alt="pizza mussarela" style="width: 100%; margin: 0 auto;"/>
+                    @using(Html.BeginForm("", null, new AjaxOptions() { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "boxFaturaOperacaoForm", OnSuccess = "DefaultSistema.tratarRetornoForm" }, new { id = "formInutilizarFatura" })) {
+                        <div class="row" style="padding: 10px; margin: 10px; border: 1px solid #2f4f4f">
+                            <div class="col-md-2">
+                                <img src="~/Assets/images/pizza calabresa.jpg" alt="pizza mussarela" style="width: 100%; margin: 0 auto;"/>
+                            </div>
+                            <div class="col-md-8">
+                                <p>
+                                    <strong>Pizza grande Calabresa </strong>
+                                </p>
+                                <p>Recheio: Molho de tomate,calabresa, Mussarela,Rodelas de tomates,óregano</p>
+        
+                                <p>
+                                    <strong>Preço unitario: R$30,00 </strong>
+                                </p>
+                            </div>
+        
+                            <div class="col-md-2">
+                                <button class="btn btn-primary" type="submit">Adicionar</button>
+                            </div>
+        
                         </div>
-                        <div class="col-md-8">
-                            <p>
-                                <strong>Pizza grande Calabresa </strong>
-                            </p>
-                            <p>Recheio: Molho de tomate,calabresa, Mussarela,Rodelas de tomates,óregano</p>
-
-                            <p>
-                                <strong>Preço unitario: R$30,00 </strong>
-                            </p>
+                    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Adicionar ao pedido</button>
                         </div>
-
-                        <div class="col-md-2">
-                            <button class="btn btn-primary" type="submit">Adicionar</button>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary">Salvar Pedido</button>
-                    </div>
+                    }
                 </div>
             </div>
         </div>

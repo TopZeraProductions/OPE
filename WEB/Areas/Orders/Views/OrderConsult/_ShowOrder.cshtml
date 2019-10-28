@@ -1,10 +1,11 @@
-@model WEB.Areas.Orders.Models.Forms.RegisterOrderForm
-
-@{ Layout = "masterpage"; }
+@{
+    Layout = "masterpage";
+}
 
 @section Styles {
     <link rel="stylesheet" type="text/css" href="~/Areas/Orders/Assets/css/order-style.css">
 }
+
 
 <!-- Modal -->
 <div class="modal fade" id="modalcadastrocliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -19,7 +20,6 @@
 
             <div class="modal-body">
                 <div class="row">
-                    
                     @*<div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -56,12 +56,12 @@
                         <label>Endereço da residencial:</label>
                         <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
-
+                    
                     <div class="form-group col-md-2">
                         <label>Bairro:</label>
                         <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
-
+                    
                     <div class="form-group col-md-2">
                         <label>Numero:</label>
                         <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -71,7 +71,7 @@
                         <label>CEP:</label>
                         <input type="text" class="form-control" placeholder="_____-__" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
-
+ 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -149,11 +149,10 @@
 
 <article id="itens-pedido" style="margin-top: 30px;">
     <div class="row">
-        
         <div class="col-9">
             <h4>Dados do Pedido</h4>
         </div>
-        
+
         <div class="col-3">
             <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modalExemplo">
                 <i class="fa fa-plus"></i>
@@ -222,7 +221,6 @@
             </div>
         </div>
     </div>
-    
     <div class="row" style="padding: 10px; margin: 10px; border: 1px solid #2f4f4f" id="item1">
         <div class="col-md-2">
             <img src="~/Assets/images/pizza mussarela.jpg" alt="pizza mussarela" style="width: 100%; margin: 0 auto;"/>
@@ -338,5 +336,6 @@
         </div>
 
         <div class="col-md-3"></div>
+
     </div>
 </article>

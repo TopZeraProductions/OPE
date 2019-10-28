@@ -1,7 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
-using BLL.Orders.Contracts;
+using DAL.Models.Orders.Services.Contracts;
 
 using DTO.Orders;
 
@@ -16,10 +15,10 @@ namespace WEB.Areas.Orders.Controllers {
     [Area("Orders")]
     public class OrdersRegisterController : RestrictController {
 
-        public IOrderBl _orderbl { get; set; }
+        private readonly IOrderServicesDAL _orderServicesDAL;
 
-        public OrdersRegisterController(IOrderBl orderbl) {
-            _orderbl = orderbl;
+        public OrdersRegisterController(IOrderServicesDAL orderServices) {
+            this._orderServicesDAL = orderServices;
         }
 
         [HttpPost]
@@ -57,7 +56,7 @@ namespace WEB.Areas.Orders.Controllers {
                 Active    = true,
             }).ToListJsonObject<OrderItem>();
 
-            this._orderbl.GenerateOrder(order, form.idClient, listItens);
+            this._orderServicesDAL.GenerateOrder(order, form.idClient, listItens);
 
             var json = new {
                 error       = false,
@@ -67,7 +66,7 @@ namespace WEB.Areas.Orders.Controllers {
 
             return Json(json);
         }
-
+        
     }
 
 }
