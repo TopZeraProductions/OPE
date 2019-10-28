@@ -1,3 +1,0 @@
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/obj/Debug/netcoreapp3.0/DTO.csprojAssemblyReference.cache
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/obj/Debug/netcoreapp3.0/DTO.AssemblyInfoInputs.cache
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/obj/Debug/netcoreapp3.0/DTO.AssemblyInfo.cs

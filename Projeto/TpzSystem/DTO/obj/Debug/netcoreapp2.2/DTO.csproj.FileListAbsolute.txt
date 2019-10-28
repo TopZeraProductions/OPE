@@ -1,8 +1,0 @@
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/bin/Debug/netcoreapp2.2/DTO.deps.json
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/bin/Debug/netcoreapp2.2/DTO.dll
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/bin/Debug/netcoreapp2.2/DTO.pdb
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/obj/Debug/netcoreapp2.2/DTO.csprojAssemblyReference.cache
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/obj/Debug/netcoreapp2.2/DTO.AssemblyInfoInputs.cache
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/obj/Debug/netcoreapp2.2/DTO.AssemblyInfo.cs
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/obj/Debug/netcoreapp2.2/DTO.dll
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/obj/Debug/netcoreapp2.2/DTO.pdb

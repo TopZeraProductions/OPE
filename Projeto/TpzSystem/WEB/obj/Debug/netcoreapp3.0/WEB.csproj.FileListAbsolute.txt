@@ -1,8 +1,0 @@
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp3.0/WEB.csprojAssemblyReference.cache
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp3.0/WEB.AssemblyInfoInputs.cache
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp3.0/WEB.AssemblyInfo.cs
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp3.0/WEB.TagHelpers.input.cache
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp3.0/WEB.TagHelpers.output.cache
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp3.0/WEB.dll
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp3.0/WEB.pdb
-/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp3.0/WEB.RazorCoreGenerate.cache
