@@ -24,3 +24,11 @@
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/Debug/netcoreapp2.2/UTIL.AssemblyInfo.cs
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/Debug/netcoreapp2.2/UTIL.dll
 /home/notim/GitHub/TopZera/OPE/Projeto/TpzSystem/UTIL/obj/Debug/netcoreapp2.2/UTIL.pdb
+G:\Projetos\GitHub\OPE\Projeto\TpzSystem\UTIL\bin\Debug\netcoreapp2.2\UTIL.deps.json
+G:\Projetos\GitHub\OPE\Projeto\TpzSystem\UTIL\bin\Debug\netcoreapp2.2\UTIL.dll
+G:\Projetos\GitHub\OPE\Projeto\TpzSystem\UTIL\bin\Debug\netcoreapp2.2\UTIL.pdb
+G:\Projetos\GitHub\OPE\Projeto\TpzSystem\UTIL\obj\Debug\netcoreapp2.2\UTIL.csprojAssemblyReference.cache
+G:\Projetos\GitHub\OPE\Projeto\TpzSystem\UTIL\obj\Debug\netcoreapp2.2\UTIL.AssemblyInfoInputs.cache
+G:\Projetos\GitHub\OPE\Projeto\TpzSystem\UTIL\obj\Debug\netcoreapp2.2\UTIL.AssemblyInfo.cs
+G:\Projetos\GitHub\OPE\Projeto\TpzSystem\UTIL\obj\Debug\netcoreapp2.2\UTIL.dll
+G:\Projetos\GitHub\OPE\Projeto\TpzSystem\UTIL\obj\Debug\netcoreapp2.2\UTIL.pdb

@@ -1,31 +1,28 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/WEB.csproj",
+    "projectUniqueName": "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\WEB\\WEB.csproj",
     "projectName": "WEB",
-    "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/WEB.csproj",
-    "outputPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/",
+    "projectPath": "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\WEB\\WEB.csproj",
+    "outputPath": "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\WEB\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"
     ],
-    "sources": {
-      "https://api.nuget.org/v3/index.json": {}
-    },
     "frameworks": {
       "netcoreapp2.2": {
         "projectReferences": {
-          "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/BLL.csproj": {
-            "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/BLL.csproj"
+          "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\BLL\\BLL.csproj": {
+            "projectPath": "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\BLL\\BLL.csproj"
           },
-          "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DAL/DAL.csproj": {
-            "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DAL/DAL.csproj"
+          "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\DAL\\DAL.csproj": {
+            "projectPath": "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\DAL\\DAL.csproj"
           },
-          "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj": {
-            "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj"
+          "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\UTIL\\UTIL.csproj": {
+            "projectPath": "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\UTIL\\UTIL.csproj"
           }
         }
       }

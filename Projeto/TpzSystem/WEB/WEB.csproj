@@ -1,40 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
-    <PropertyGroup>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
-        <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-        <RootNamespace>WEB</RootNamespace>
-        <LangVersion>7.3</LangVersion>
-        <Nullable>disable</Nullable>
-    </PropertyGroup>
-
-
-    <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.App" />
-        <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-        <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
-    </ItemGroup>
-
-
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="Areas\Products\Views\Home\Index.cshtml" />
-      <_ContentIncludedByDefault Remove="Areas\Products\Views\Home\Privacy.cshtml" />
-      <_ContentIncludedByDefault Remove="Areas\Home\Views\HomeConsult\ListProducts.cshtml" />
-      <_ContentIncludedByDefault Remove="Areas\Home\Views\ProductsConsult\Home.cshtml" />
-      <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
-      <_ContentIncludedByDefault Remove="Areas\Orders\Views\OrderConsult\ShowOrder.cshtml" />
-    </ItemGroup>
-
-
-    <ItemGroup>
-      <ProjectReference Include="..\BLL\BLL.csproj" />
-      <ProjectReference Include="..\DAL\DAL.csproj" />
-      <ProjectReference Include="..\UTIL\UTIL.csproj" />
-    </ItemGroup>
-
-
-    <ItemGroup>
-      <Folder Include="Areas\Orders\Views" />
-    </ItemGroup>
-
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <RootNamespace>WEB</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Areas\Products\Views\Home\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Products\Views\Home\Privacy.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Home\Views\HomeConsult\ListProducts.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Home\Views\ProductsConsult\Home.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Orders\Views\OrderConsult\ShowOrder.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj" />
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+    <ProjectReference Include="..\UTIL\UTIL.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Orders\Views" />
+  </ItemGroup>
 </Project>

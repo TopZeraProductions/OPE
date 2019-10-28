@@ -1,20 +1,17 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj",
+    "projectUniqueName": "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\UTIL\\UTIL.csproj",
     "projectName": "UTIL",
-    "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj",
-    "outputPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/obj/",
+    "projectPath": "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\UTIL\\UTIL.csproj",
+    "outputPath": "G:\\Projetos\\GitHub\\OPE\\Projeto\\TpzSystem\\UTIL\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.2"
     ],
-    "sources": {
-      "https://api.nuget.org/v3/index.json": {}
-    },
     "frameworks": {
       "netcoreapp2.2": {
         "projectReferences": {}

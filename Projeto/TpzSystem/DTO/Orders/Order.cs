@@ -17,5 +17,7 @@ namespace DTO.Orders
         public virtual IList<OrderItem> OrderItems { get; set; }
 
         public byte? Status { get; set; }
+        
+        public byte? PaymentMode { get; set; }
     }
 }
