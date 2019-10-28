@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 
 using WEB.AppStart;
 
-namespace WEB{
+namespace WEB {
 
     public class Program {
         public static void Main(string[] args) {

@@ -113,3 +113,9 @@
 /home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.cshtml.g.cs
 /home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Views/_ViewStart.cshtml.g.cs
 /home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/obj/Debug/netcoreapp2.2/Razor/Areas/Dashboard/Views/DashboardConsult/index.cshtml.g.cs
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/bin/Debug/netcoreapp2.2/BLL.dll
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/bin/Debug/netcoreapp2.2/DAL.dll
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/bin/Debug/netcoreapp2.2/DTO.dll
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/bin/Debug/netcoreapp2.2/BLL.pdb
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/bin/Debug/netcoreapp2.2/DAL.pdb
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/WEB/bin/Debug/netcoreapp2.2/DTO.pdb

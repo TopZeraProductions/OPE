@@ -17,7 +17,17 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DAL/DAL.csproj": {
+            "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DAL/DAL.csproj"
+          },
+          "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/DTO.csproj": {
+            "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/DTO/DTO.csproj"
+          },
+          "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj": {
+            "projectPath": "/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/UTIL/UTIL.csproj"
+          }
+        }
       }
     },
     "warningProperties": {

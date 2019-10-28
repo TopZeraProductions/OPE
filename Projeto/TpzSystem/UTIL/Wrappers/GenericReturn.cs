@@ -1,69 +1,44 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace UTIL.Wrappers {
+namespace UTIL.Wrappers
+{
+    public class GenericReturn
+    {
+        public bool Error { get; set; }
+        public IList<string> MessageList { get; set; }
+        public object Info { get; set; }
 
-    public class GenericReturn {
+        public GenericReturn()
+        {
+            this.MessageList = new List<string>();
+        }
 
-        public bool          error       { get; set; }
-        public IList<string> messageList { get; set; }
-        public object        info        { get; set; }
+        public GenericReturn(bool flagError = false, string message = "", object info = null)
+        {
+            this.MessageList = new List<string>();
 
-        public static GenericReturn NewInstance(bool error = true, List<string> messages = null, object info = null) {
-            var GenReturn = new GenericReturn();
+            this.Error = flagError;
+            this.MessageList.Add(message);
+            this.Info = info;
+        }
+        
+        public static GenericReturn NewInstance(bool error = true, string message = "", object info = null)
+        {
+            var genReturn = new GenericReturn();
 
-            if (messages != null && messages.Any()) {
-                GenReturn.messageList = messages;
+            if (!string.IsNullOrEmpty(message)) {
+                genReturn.MessageList.Add(message);
             }
 
-            GenReturn.error = error;
+            genReturn.Error = error;
 
-            if (info != null) {
-                GenReturn.info = info;
+            if (info != null)
+            {
+                genReturn.Info = info;
             }
 
-            return GenReturn;
+            return genReturn;
         }
     }
-
-    internal sealed class example {
-        public void main() {
-            // a classe GenericReturn tem tres jeitos de usar
-
-            // Criando um novo Obj e atribuindo os valores diretamente
-            var GenReturn = new GenericReturn();
-            GenReturn.error       = true;
-            GenReturn.messageList = new List<string>();
-            GenReturn.info        = new object();
-
-            // chamando um metodo NewInstance que eh estatico e retorna um obj prenchido a partir do tu manda por parametro
-            GenericReturn.NewInstance(
-                true,
-                new List<string> {
-                    "Erro", 
-                    "Acerto"
-                },
-                new {
-                    valor = 1
-                }
-            );
-
-            // usando metodos extensions fluent
-            GenReturn = GenReturn.SetError(true)
-                                 .AddMessage("Value1")
-                                 .AddMessage(
-                                    "Value2", 
-                                    "value2",
-                                    "value2"
-                                 )
-                                 .AddInfo(
-                                     new {
-                                         value1 = 5,
-                                         value2 = "str"
-                                     }
-                                 );
-
-        }
-    }
-
 }

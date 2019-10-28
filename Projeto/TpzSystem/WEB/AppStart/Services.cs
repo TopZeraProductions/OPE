@@ -1,5 +1,6 @@
 using System;
-
+using BLL.Core.DI;
+using DAL.Core.DI;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,20 +15,21 @@ namespace WEB.AppStart {
     public partial class Startup {
         // Essa classe serve para Definiçao de resoluçao de dependencias
         public void ConfigureServices(IServiceCollection services) {
-            /*Services.Configure<CookiePolicyOptions>(// for cookie police (only write cookies if client accept)
+            /*
+            Services.Configure<CookiePolicyOptions>(// for cookie police (only write cookies if client accept)
                 options => {
                     options.CheckConsentNeeded    = context => true;
                     options.MinimumSameSitePolicy = SameSiteMode.None;
                 }
-            );*/
+            );
+            */
 
             services.AddMvc(// for global filters
                 options=> {
                     // options.Filters.Add(new LoggedFilter()); // instance
                     // options.Filters.Add(typeof(LoggedFilter)); // type (if need DI)
                 }
-            )
-            .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            ).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             
             services.AddHttpContextAccessor(); // injeta o contexto http fora das controllers
 
@@ -48,6 +50,9 @@ namespace WEB.AppStart {
                     options.Cookie.SameSite     = SameSiteMode.Strict;
                 }
             );
+            
+            ServicesDataAccessLayer.Mapping(ref services);
+            ServicesBusinessLogicLayer.Mapping(ref services);
         }
     }
 }

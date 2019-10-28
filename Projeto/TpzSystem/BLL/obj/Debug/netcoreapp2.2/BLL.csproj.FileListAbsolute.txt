@@ -1,0 +1,15 @@
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/bin/Debug/netcoreapp2.2/BLL.deps.json
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/bin/Debug/netcoreapp2.2/BLL.dll
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/bin/Debug/netcoreapp2.2/BLL.pdb
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/bin/Debug/netcoreapp2.2/DAL.dll
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/bin/Debug/netcoreapp2.2/DTO.dll
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/bin/Debug/netcoreapp2.2/UTIL.dll
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/bin/Debug/netcoreapp2.2/DAL.pdb
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/bin/Debug/netcoreapp2.2/DTO.pdb
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/bin/Debug/netcoreapp2.2/UTIL.pdb
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/obj/Debug/netcoreapp2.2/BLL.csprojAssemblyReference.cache
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/obj/Debug/netcoreapp2.2/BLL.AssemblyInfoInputs.cache
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/obj/Debug/netcoreapp2.2/BLL.AssemblyInfo.cs
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/obj/Debug/netcoreapp2.2/BLL.csproj.CopyComplete
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/obj/Debug/netcoreapp2.2/BLL.dll
+/home/notim/GitHub/Topzera/OPE/Projeto/TpzSystem/BLL/obj/Debug/netcoreapp2.2/BLL.pdb

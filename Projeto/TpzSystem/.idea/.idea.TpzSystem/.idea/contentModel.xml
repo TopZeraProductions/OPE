@@ -6,6 +6,22 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="BLL" t="IncludeRecursive">
         <e p="BLL.csproj" t="IncludeRecursive" />
+        <e p="Core" t="Include">
+          <e p="DI" t="Include">
+            <e p="ServicesDataAccessLayer.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Orders" t="Include">
+          <e p="Contracts" t="Include">
+            <e p="IOrderBl.cs" t="Include" />
+          </e>
+          <e p="DI" t="Include">
+            <e p="ServicesBusinessLogicLayerOrders.cs" t="Include" />
+          </e>
+          <e p="Implementations" t="Include">
+            <e p="OrderBl.cs" t="Include" />
+          </e>
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -16,7 +32,93 @@
         </e>
       </e>
       <e p="DAL" t="IncludeRecursive">
+        <e p="Core" t="Include">
+          <e p="Connections.cs" t="Include" />
+          <e p="Contracts" t="Include">
+            <e p="IGenericDataServicesDAL.cs" t="Include" />
+          </e>
+          <e p="DI" t="Include">
+            <e p="ServicesDataAccessLayer.cs" t="Include" />
+          </e>
+          <e p="DataContext.cs" t="Include" />
+          <e p="DefaultContext.cs" t="Include" />
+          <e p="Implementations" t="Include">
+            <e p="GenericDataServicesDAL.cs" t="Include" />
+          </e>
+          <e p="ModelCreating.cs" t="Include" />
+        </e>
         <e p="DAL.csproj" t="IncludeRecursive" />
+        <e p="DATABASE.db" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="20191027213818_initialmigration.Designer.cs" t="Include" />
+          <e p="20191027213818_initialmigration.cs" t="Include" />
+          <e p="20191027222048_sqllitemigration.Designer.cs" t="Include" />
+          <e p="20191027222048_sqllitemigration.cs" t="Include" />
+          <e p="DataContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Clients" t="Include">
+            <e p="Builder" t="Include">
+              <e p="ClientModelBuilder.cs" t="Include" />
+            </e>
+            <e p="Repository" t="Include">
+              <e p="DataContext.cs" t="Include" />
+            </e>
+            <e p="Services" t="Include">
+              <e p="Contracts" t="Include">
+                <e p="IClientServicesDAL.cs" t="Include" />
+              </e>
+              <e p="DI" t="Include">
+                <e p="ServicesDataAccessLayerClients.cs" t="Include" />
+              </e>
+              <e p="Implementations" t="Include">
+                <e p="ClientServicesDAL.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Orders" t="Include">
+            <e p="Builder" t="Include">
+              <e p="OrderItemModelBuilder.cs" t="Include" />
+              <e p="OrderModelBuilder.cs" t="Include" />
+            </e>
+            <e p="Repository" t="Include">
+              <e p="DataContext.cs" t="Include" />
+            </e>
+            <e p="Services" t="Include">
+              <e p="Contracts" t="Include">
+                <e p="IOrderItemServicesDAL.cs" t="Include" />
+                <e p="IOrderServicesDAL.cs" t="Include" />
+              </e>
+              <e p="DI" t="Include">
+                <e p="ServicesDataAccessLayerOrders.cs" t="Include" />
+              </e>
+              <e p="Implementations" t="Include">
+                <e p="OrderItemServicesDAL.cs" t="Include" />
+                <e p="OrderServicesDAL.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Products" t="Include">
+            <e p="Builder" t="Include">
+              <e p="ProdutoModelBuilder.cs" t="Include" />
+            </e>
+            <e p="Repository" t="Include">
+              <e p="DataContext.cs" t="Include" />
+            </e>
+            <e p="Services" t="Include">
+              <e p="Contracts" t="Include">
+                <e p="IProductServicesDAL.cs" t="Include" />
+              </e>
+              <e p="DI" t="Include">
+                <e p="ServicesDataAccessLayerProducts.cs" t="Include" />
+              </e>
+              <e p="Implementations" t="Include">
+                <e p="OrderServicesDAL.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -27,41 +129,20 @@
         </e>
       </e>
       <e p="DTO" t="IncludeRecursive">
-        <e p="Coordenadores" t="Include">
-          <e p="Builders" t="Include">
-            <e p="CoordenadorModelBuilder.cs" t="Include" />
-          </e>
-          <e p="Entities" t="Include">
-            <e p="Coordenador.cs" t="Include" />
-          </e>
-          <e p="Repository" t="Include">
-            <e p="DataContext.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Core" t="Include">
-          <e p="Connections.cs" t="Include" />
-          <e p="EntitiesCore.cs" t="Include" />
-          <e p="Extensions" t="Include">
-            <e p="DataContextExtensions.cs" t="Include" />
-          </e>
-          <e p="ModelCreating.cs" t="Include" />
-          <e p="ToMigrateSqlServer.cs" t="Include" />
-          <e p="sharedKernel" t="Include">
-            <e p="DefaultContext.cs" t="Include" />
-            <e p="DefaultEntity.cs" t="Include" />
-          </e>
+        <e p="Clients" t="Include">
+          <e p="Client.cs" t="Include" />
         </e>
         <e p="DTO.csproj" t="IncludeRecursive" />
-        <e p="Produtos" t="Include">
-          <e p="Builder" t="Include">
-            <e p="ProdutoModelBuilder.cs" t="Include" />
-          </e>
-          <e p="Entities" t="Include">
-            <e p="Produto.cs" t="Include" />
-          </e>
-          <e p="Repository" t="Include">
-            <e p="DataContext.cs" t="Include" />
-          </e>
+        <e p="Orders" t="Include">
+          <e p="Order.cs" t="Include" />
+          <e p="OrderItem.cs" t="Include" />
+          <e p="OrderStatusEnum.cs" t="Include" />
+        </e>
+        <e p="Products" t="Include">
+          <e p="Product.cs" t="Include" />
+        </e>
+        <e p="SharedKernel" t="Include">
+          <e p="DefaultEntity.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
