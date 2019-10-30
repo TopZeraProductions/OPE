@@ -17,9 +17,14 @@ namespace DAL.Core {
                 }
             );
             listConnections.Add(
-                new Connection {
+                /*new Connection {
                    Name          = "StdSqlServer",
                    StrConnection = @"Server=127.0.0.1,8051; Database=Lms2019;User Id=SA;Password=TopZera123",
+                   Provider      = "SqlServer"
+                },*/
+                new Connection {
+                   Name          = "StdSqlServer",
+                   StrConnection = @"Server=localhost\SQLEXPRESS01;Database=master;Trusted_Connection=True;",
                    Provider      = "SqlServer"
                 }
             );

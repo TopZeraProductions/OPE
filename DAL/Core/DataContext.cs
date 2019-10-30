@@ -22,12 +22,12 @@ namespace DAL.Core
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            this.SetDataBase("StdSqlite");
+            this.SetDataBase("StdSqlServer");
             
             if (!optionsBuilder.IsConfigured)
             {
-                // optionsBuilder.UseSqlServer(Connection.StrConnection);
-                optionsBuilder.UseSqlite(Connection.StrConnection);
+                optionsBuilder.UseSqlServer(Connection.StrConnection);
+                // optionsBuilder.UseSqlite(Connection.StrConnection);
             }
         }
     }
